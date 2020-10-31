@@ -4,7 +4,42 @@
 <script src="RentCalculator.js"></script>
 <style>
 
-
+.form {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+}
+body {
+    font-family: 
+    -apple-system, 
+    BlinkMacSystemFont, 
+    'Segoe UI', 
+    Roboto, 
+    Oxygen, 
+    Ubuntu, 
+    Cantarell, 
+    'Open Sans', 
+    'Helvetica Neue', 
+    sans-serif;
+}
+@media screen and (max-width: 400px) {
+    .form {
+        width: 100%;
+    }
+}
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+input[type="text"]:focus {
+    border: 3px solid;
+}
 
 </style>
 </head>
@@ -22,6 +57,7 @@
         <input type="text" id="xcel" name="xcel"><br>
     </form>
     <button class="addnew" onclick="addNew()">+</button>
+    <input type="submit" text="Submit">
 </div>
 
 </body>
