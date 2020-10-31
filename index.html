@@ -28,6 +28,9 @@
             padding: 10px;
             border-radius: 20px;
         }
+        .card:hover {
+            background-color: rgba(255, 255, 255, .1);
+        }
         body {
             background-color:#121212;
             color:#FFFFFF;
@@ -53,34 +56,45 @@
         p {
             margin: 10px;
         }
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%
+            }
+        }
     </style>
     <link rel="stylesheet" href="style.css">
     <title>Erick Bickler</title>
 </head>
 <body>
     <div class="header">
-        <h1>Erick Bickler</h1>
-        <p>erickbickler@gmail.com</p>
-    </div>
 
+    </div>
     <div class="row">
         <div class="rightcolumn">
             <div class="card">
                 <img src="images/profile_pic.jpg" alt=" "  class="center" style="border-radius: 10px;">
                 <h2>
-                    About Me
+                    Erick Bickler
                 </h2>
                 <p>
-                    Junior Computer Science Major at North Dakota state University
+                    Full Stack Software Developer
                 </p>
+                
             </div>
         </div>
         <div class="leftcolumn">
             <div class="card">
+                <h2>Projects</h2>
+                <ul>
+                    <li>DKC<sup>3</sup> 
+                        - Intercollegiate programming competition hosted by Digi-Key Electronics. 
+                    </br> Placed 3<sup>rd</sup> of 20 teams</li>
+                </ul>
+            </div>
+            <div class="card">
                 <h2>Card Header</h2>
                 <p>Card Text</p>
             </div>
-
         </div>
     </div>
 </body>
