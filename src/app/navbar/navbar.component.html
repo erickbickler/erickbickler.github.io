@@ -1,0 +1,8 @@
+<div class="grid-container">
+    <div class="navbar" [ngClass]="{'sticky': isScrolled }" (window:scroll)="onWindowScroll()">
+        <ul>
+            <li><a routerLink="/projects" routerLinkActive="active" (click)="scroll()">Projects</a></li>
+            <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+        </ul>
+    </div>
+</div>

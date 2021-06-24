@@ -1,0 +1,16 @@
+.headshot {
+    width: 100%;
+    height: auto;
+}
+
+.link-images {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-images > a > img {
+    width: 55px;
+    height: 55px;
+    padding: 12px 10px;
+}

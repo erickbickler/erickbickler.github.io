@@ -1,0 +1,44 @@
+.grid-container {
+    display: grid;
+}
+
+.navbar {
+    width: 100%;
+    height: 67px;
+    left: 0px;
+    top: 142px;
+    background: #373737;
+    z-index: 1000;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.active {
+    color: rgba(235, 255, 0, 0.96);
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
