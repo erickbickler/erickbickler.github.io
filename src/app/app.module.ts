@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { ToolComponent } from './tool/tool.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AboutPageComponent } from './about-page/about-page.component';
     TopNavbarComponent,
     ProjectsPageComponent,
     ProjectCardComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    ToolComponent
   ],
   imports: [
     BrowserModule,

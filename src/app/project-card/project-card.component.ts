@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import { Project } from '../Models/project';
 
 @Component({
   selector: 'app-project-card',
@@ -12,5 +13,10 @@ export class ProjectCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  @Input() project: Project = new Project();
+  
+  goToDetails() {
+    
+  }
 }

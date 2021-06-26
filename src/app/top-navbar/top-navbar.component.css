@@ -26,9 +26,17 @@ p {
 }
 
 img {
-    width: 55px;
-    height: 55px;
+    width: 80px;
+    height: 80px;
     padding: 12px 10px;
+}
+
+.animate-opacity {
+    transition: opacity .3s;
+}
+
+.animate-opacity:hover {
+    opacity: 70%;
 }
 
 li {

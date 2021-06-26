@@ -1,6 +1,4 @@
-.grid-container {
-    display: grid;
-}
+
 
 .navbar {
     width: 100%;
@@ -8,7 +6,7 @@
     left: 0px;
     top: 142px;
     background: #373737;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .sticky {
