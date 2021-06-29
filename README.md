@@ -1,6 +1,6 @@
 # PortfolioWebsite
 
-Website to demonstrate my abilities and skills. Check it out at [https://erickbickler.github.io/](https://erickbickler.github.io/)!
+Website to demonstrate my abilities and skills. Check it out at [erickbickler.github.io](https://erickbickler.github.io/)!
 
 ## Development server
 
