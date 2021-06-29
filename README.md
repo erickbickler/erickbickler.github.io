@@ -1,6 +1,6 @@
 # PortfolioWebsite
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9.
+Website to demonstrate my abilities and skills. Check it out at [https://erickbickler.github.io/](https://erickbickler.github.io/)!
 
 ## Development server
 
