@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Build and Test
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -17,11 +17,9 @@ jobs:
         with:
           node-version: '12.x'
       - name: Install dependencies
-        run: 
-          npm install -g @angular/cli
-          npm update
+        run: npm ci
       - name: Build
-        run: ng build --prod=true --outputPath=docs --baseHref=erickbickler.github.io
+        run: ng build --prod --sourceMap=false --base-href=erickbickler.github.io
       - name: Archive build
         if: success()
         uses: actions/upload-artifact@v1
@@ -35,17 +33,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
       - name: Download build
         uses: actions/download-artifact@v1
         with:
           name: deploy_dist
       - name: Deploy to GitHub Pages
-        run:
-          cp docs/index.html docs/404.html
-          git config --global user.name 'Github Actions'
-          git config --global user.email 'action@github.com'
-          git commit -am "Automated Github Pages Deployment"
-          git push
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
