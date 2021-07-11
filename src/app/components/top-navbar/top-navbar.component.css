@@ -4,10 +4,9 @@
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    flex-grow: 1;
     
     width: 100%;
-    /* height: auto; */
+    height: auto;
     left: 0px;
     top: 0px;
 
@@ -15,7 +14,7 @@
 }
 
 p {
-    width: 628px;
+    display: inline-block;
     height: auto;
     left: 23px;
     top: 5px;
