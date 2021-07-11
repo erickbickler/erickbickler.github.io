@@ -1,0 +1,15 @@
+<div class="image-container">
+    <img src="./assets/images/laptop-minimalist.svg" alt="minimalist laptop">
+    <div class="overlay">
+        <h1>Projects</h1>
+    </div>
+</div>
+<div id="projects" class="projects">
+    
+    <mat-divider></mat-divider>
+    <div class="row" style="margin: 0">
+        <div class="col-4" *ngFor="let project of projectList">
+            <app-project-card [project]="project"></app-project-card>
+        </div>
+    </div>
+</div>

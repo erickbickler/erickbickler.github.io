@@ -1,0 +1,11 @@
+<mat-card routerLink="/projects/{{project.routingName}}" [state]="{ project: this.project }">
+    <mat-card-title>{{ project.title }}</mat-card-title>
+    <mat-card-subtitle>{{ project.subtitle }}</mat-card-subtitle>
+    <img mat-card-image [src]="project.primaryImage" alt="project image">
+    <mat-card-content>
+        <p>{{ project.description }}</p>
+        <div class="tool-container" *ngFor="let tool of project.tools">
+            <app-tool [tool]="tool"></app-tool>
+        </div>
+    </mat-card-content>
+</mat-card>

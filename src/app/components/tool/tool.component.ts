@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Tool } from 'src/app/Models/tool';
 
 @Component({
   selector: 'app-tool',
@@ -11,5 +12,7 @@ export class ToolComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  @Input() tool: Tool = new Tool();
 
 }

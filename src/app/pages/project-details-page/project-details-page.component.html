@@ -1,0 +1,10 @@
+<h1>{{this.project.title}}</h1>
+<h2>{{this.project.subtitle}}</h2>
+<mat-divider></mat-divider>
+<p> {{this.project.description}} </p>
+<div class="tools">
+    <p> Built with: </p>
+    <app-tool *ngFor="let tool of this.project.tools" [tool]="tool"></app-tool>
+</div>
+<img [src]="this.project.primaryImage" alt="Primary Project Image">
+<img *ngFor="let image of this.project.secondaryImages; index as i" [src]="image" alt="Secondary Project Image #{{i + 1}}">

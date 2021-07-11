@@ -1,0 +1,48 @@
+.container {
+    margin: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+}
+
+p {
+    padding: 10px;
+}
+
+mat-divider {
+    margin: auto;
+    width: 60%;
+    padding-bottom: 10px;
+}
+
+.tools {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+app-tool {
+    display: inline;
+    float: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+img {
+    display: block;
+    width: 98%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (min-width: 768px) {
+    img { width: 70%}
+}

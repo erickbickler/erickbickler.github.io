@@ -19,7 +19,6 @@ html, body {
 [class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid red;
 }
 
 .row::after {
@@ -84,4 +83,12 @@ html, body {
   
 .tooltip:hover .tooltiptext {
     opacity: 1;
+}
+
+.animate-opacity {
+    transition: opacity .3s;
+}
+
+.animate-opacity:hover {
+    opacity: 70%;
 }

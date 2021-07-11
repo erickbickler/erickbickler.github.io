@@ -17,16 +17,6 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  isScrolled:boolean = false;
-  
-  onWindowScroll() {
-    if (window.pageYOffset >= 142) {
-      this.isScrolled = true;
-    } else {
-      this.isScrolled = false;
-    }
-  }
-
   scroll() {
     if(this.router.url == '/projects') {
       this.viewportScroller.scrollToAnchor('projects');
