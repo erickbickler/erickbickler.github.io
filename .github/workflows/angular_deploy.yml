@@ -23,7 +23,10 @@ jobs:
 #       - name: Build
 #         run: ng build --prod --sourceMap=false
       - name: Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ng deploy
+          
 #       - name: Archive build
 #         if: success()
 #         uses: actions/upload-artifact@v1
