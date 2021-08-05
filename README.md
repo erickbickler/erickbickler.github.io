@@ -24,7 +24,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Deploying to Github Pages
 
-Run `ng deploy --base-href=erickbickler.github.io` to deploy to the gh-pages branch automatically
+Run `ng deploy` to deploy to the gh-pages branch automatically
 
 ## Further help
 
