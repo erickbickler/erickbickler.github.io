@@ -17,9 +17,11 @@ jobs:
         with:
           node-version: '12.x'
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm install
+          npm install -g @angular/cli
       - name: Build
-        run: ng build --prod --sourceMap=false --base-href=erickbickler.github.io
+        run: ng build --prod --sourceMap=false
       - name: Archive build
         if: success()
         uses: actions/upload-artifact@v1
