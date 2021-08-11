@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
     {
         title: "Advanced Software Development Class Project",
         subtitle: "The Saucy Hedgehog",
-        description: "Class project for Advanced Software Development. A website built for a restaurant named The Spicy Hedgehog. Built with a menu, location list, and daily specials that are automatically generated and refresh daily",
+        description: "Class project for Advanced Software Development. A website built for a fake restaurant named The Spicy Hedgehog. Built with a menu, location list, and daily specials that are automatically generated and refresh daily, complete with an admin page that enables easy editing and updating of pages as business changes require.",
         primaryImage: "./assets/images/projects/saucy_hedgehog/saucy_hedgehog_homepage.PNG",
         secondaryImages: [
           "./assets/images/projects/saucy_hedgehog/saucy_hedgehog_locations.PNG",
