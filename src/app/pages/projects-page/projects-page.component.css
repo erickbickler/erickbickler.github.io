@@ -2,6 +2,11 @@
     height: 60vh;
 }
 
+.project-container {
+    display: flex;
+    align-items: stretch;
+}
+
 h1 {
     text-align: center;
     font-size: 65px;
