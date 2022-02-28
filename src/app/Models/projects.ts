@@ -33,10 +33,32 @@ const TOOLS: Tool[] = [
     {
       name: "Heroku",
       imagePath: "./assets/images/tools/heroku-logo.svg"
+    },
+    {
+      name: "Python",
+      imagePath: "./assets/images/tools/Python-Emblem.jpg"
+    },
+    {
+      name: "Godot",
+      imagePath: "./assets/images/tools/godot_icon.svg"
     }
 ]
 
 export const PROJECTS: Project[] = [
+    {
+      title: "Byte-le Royale 2022",
+      subtitle: "",
+      description: "Developed a game for Byte-le Royale 2022, a yearly competition held at NDSU by the local ACM chapter. Lead development with a team of 7 people on a year long projec that culminated in a day of great competition for the students who competed.",
+      primaryImage: "./assets/images/projects/byte-le_royale/byte-le_logo.png",
+      secondaryImages: [
+
+      ],
+      tools: [
+        TOOLS.find(tool => tool.name == "Python")!,
+        TOOLS.find(tool => tool.name == "Godot")!
+      ],
+      routingName: "byte-le_royale"
+    },
     {
       title: "Advanced Software Development Class Project",
       subtitle: "The Saucy Hedgehog",
