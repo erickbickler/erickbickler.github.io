@@ -47,34 +47,17 @@ const TOOLS: Tool[] = [
 export const PROJECTS: Project[] = [
     {
       title: "Byte-le Royale 2022",
-      subtitle: "",
-      description: "Developed a game for Byte-le Royale 2022, a yearly competition held at NDSU by the local ACM chapter. Lead development with a team of 7 people on a year long projec that culminated in a day of great competition for the students who competed.",
+      subtitle: "AI Programming Competition",
+      description: "Developed a game for Byte-le Royale 2022, a yearly competition held at NDSU by the local ACM chapter. Lead development with a team of 7 people on a year long project that culminated in a day of great competition for the students who competed.",
       primaryImage: "./assets/images/projects/byte-le_royale/byte-le_logo.png",
       secondaryImages: [
-
+        "./assets/images/projects/byte-le_royale/game_run.png"
       ],
       tools: [
         TOOLS.find(tool => tool.name == "Python")!,
         TOOLS.find(tool => tool.name == "Godot")!
       ],
       routingName: "byte-le_royale"
-    },
-    {
-      title: "Advanced Software Development Class Project",
-      subtitle: "The Saucy Hedgehog",
-      description: "Class project for Advanced Software Development. A website built for a fake restaurant named The Spicy Hedgehog. Built with a menu, location list, and daily specials that are automatically generated and refresh daily, complete with an admin page that enables easy editing and updating of pages as business changes require.",
-      primaryImage: "./assets/images/projects/saucy_hedgehog/saucy_hedgehog_homepage.PNG",
-      secondaryImages: [
-        "./assets/images/projects/saucy_hedgehog/saucy_hedgehog_locations.PNG",
-        "./assets/images/projects/saucy_hedgehog/saucy_hedgehog_menu.PNG",
-        "./assets/images/projects/saucy_hedgehog/saucy_hedgehog_menu_items.PNG",
-      ],
-      tools: [
-        TOOLS.find(tool => tool.name == "Angular")!,
-        TOOLS.find(tool => tool.name == "Firebase")!,
-        TOOLS.find(tool => tool.name == "Django")!
-      ],
-      routingName: "saucy_hedgehog"
     },
     {
       title: "Club Submission Tool",
@@ -93,5 +76,22 @@ export const PROJECTS: Project[] = [
         TOOLS.find(tool => tool.name == "Heroku")!
       ],
       routingName: "acm_submission_portal"
+    },
+    {
+      title: "Advanced Software Development Class Project",
+      subtitle: "The Saucy Hedgehog",
+      description: "Class project for Advanced Software Development. A website built for a fake restaurant named The Spicy Hedgehog. Built with a menu, location list, and daily specials that are automatically generated and refresh daily, complete with an admin page that enables easy editing and updating of pages as business changes require.",
+      primaryImage: "./assets/images/projects/saucy_hedgehog/saucy_hedgehog_homepage.PNG",
+      secondaryImages: [
+        "./assets/images/projects/saucy_hedgehog/saucy_hedgehog_locations.PNG",
+        "./assets/images/projects/saucy_hedgehog/saucy_hedgehog_menu.PNG",
+        "./assets/images/projects/saucy_hedgehog/saucy_hedgehog_menu_items.PNG",
+      ],
+      tools: [
+        TOOLS.find(tool => tool.name == "Angular")!,
+        TOOLS.find(tool => tool.name == "Firebase")!,
+        TOOLS.find(tool => tool.name == "Django")!
+      ],
+      routingName: "saucy_hedgehog"
     }
 ]
