@@ -4,11 +4,13 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ProjectDetailsPageComponent } from './pages/project-details-page/project-details-page.component';
 
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
+import { FlashcardsPageComponent } from './pages/flashcards-page/flashcards-page.component';
 
 const routes: Routes = [
   { path: 'projects', component: ProjectsPageComponent },
   { path: 'projects/:name', component: ProjectDetailsPageComponent},
   { path: 'about', component: AboutPageComponent},
+  { path: 'flashcards', component: FlashcardsPageComponent },
   { path: '', redirectTo: '/projects', pathMatch: 'full' }
 ];
 
