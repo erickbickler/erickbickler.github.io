@@ -1,1052 +1,1640 @@
 [
   {
-    "id": "151",
-    "character": "費",
-    "pinyin": "fèi",
-    "english": "cost; fee; expense",
-    "level": 2
-  },
-  {
-    "id": "152",
-    "character": "飛",
-    "pinyin": "fēi",
-    "english": "to fly; aerial",
-    "level": 2
-  },
-  {
-    "id": "153",
-    "character": "非",
-    "pinyin": "fēi",
-    "english": "not; non-; incorrect",
-    "level": 2
-  },
-  {
-    "id": "154",
-    "character": "分",
-    "pinyin": "fēn",
-    "english": "minute; to divide; part",
-    "level": 2
-  },
-  {
-    "id": "155",
-    "character": "紛",
-    "pinyin": "fēn",
-    "english": "confused; chaotic; numerous",
-    "level": 2
-  },
-  {
-    "id": "156",
-    "character": "奮",
-    "pinyin": "fèn",
-    "english": "to strive; to exert",
-    "level": 2
-  },
-  {
-    "id": "157",
-    "character": "豐",
-    "pinyin": "fēng",
-    "english": "abundant; rich; plentiful",
-    "level": 2
-  },
-  {
-    "id": "158",
-    "character": "烽",
-    "pinyin": "fēng",
-    "english": "beacon; torch",
-    "level": 2
-  },
-  {
-    "id": "159",
-    "character": "風",
-    "pinyin": "fēng",
-    "english": "wind; air; style",
-    "level": 2
-  },
-  {
-    "id": "160",
-    "character": "封",
-    "pinyin": "fēng",
-    "english": "to seal; measure word",
-    "level": 2
-  },
-  {
     "id": "161",
-    "character": "鳳",
-    "pinyin": "fèng",
-    "english": "phoenix; female phoenix",
+    "character": "男",
+    "pinyin": "nán",
+    "english": "male; man",
     "level": 2
   },
   {
     "id": "162",
-    "character": "分",
-    "pinyin": "fèn",
-    "english": "to separate; part; portion",
+    "character": "女",
+    "pinyin": "nǚ",
+    "english": "female; woman",
     "level": 2
   },
   {
     "id": "163",
-    "character": "否",
-    "pinyin": "fǒu",
-    "english": "no; not; to deny",
+    "character": "孩子",
+    "pinyin": "háizi",
+    "english": "child",
     "level": 2
   },
   {
     "id": "164",
-    "character": "服",
-    "pinyin": "fú",
-    "english": "clothes; to serve; to wear",
+    "character": "小姐",
+    "pinyin": "xiǎojiě",
+    "english": "Miss",
     "level": 2
   },
   {
     "id": "165",
-    "character": "浮",
-    "pinyin": "fú",
-    "english": "to float; superficial",
+    "character": "先生",
+    "pinyin": "xiānshēng",
+    "english": "Mr.; sir",
     "level": 2
   },
   {
     "id": "166",
-    "character": "幅",
-    "pinyin": "fú",
-    "english": "width; measure word; extent",
+    "character": "太太",
+    "pinyin": "tàitai",
+    "english": "Mrs.; wife",
     "level": 2
   },
   {
     "id": "167",
-    "character": "福",
-    "pinyin": "fú",
-    "english": "fortune; happiness; blessing",
+    "character": "女兒",
+    "pinyin": "nǚ'ér",
+    "english": "daughter",
     "level": 2
   },
   {
     "id": "168",
-    "character": "副",
-    "pinyin": "fù",
-    "english": "auxiliary; deputy; measure word",
+    "character": "兒子",
+    "pinyin": "érzi",
+    "english": "son",
     "level": 2
   },
   {
     "id": "169",
-    "character": "府",
-    "pinyin": "fǔ",
-    "english": "mansion; government",
+    "character": "大家",
+    "pinyin": "dàjiā",
+    "english": "everyone",
     "level": 2
   },
   {
     "id": "170",
-    "character": "輔",
-    "pinyin": "fǔ",
-    "english": "to assist; secondary",
+    "character": "路",
+    "pinyin": "lù",
+    "english": "road",
     "level": 2
   },
   {
     "id": "171",
-    "character": "腐",
-    "pinyin": "fǔ",
-    "english": "rotten; corrupt; bean curd",
+    "character": "手機",
+    "pinyin": "shǒujī",
+    "english": "cell phone",
     "level": 2
   },
   {
     "id": "172",
-    "character": "父",
-    "pinyin": "fù",
-    "english": "father",
+    "character": "明年",
+    "pinyin": "míngnián",
+    "english": "next year",
     "level": 2
   },
   {
     "id": "173",
-    "character": "負",
-    "pinyin": "fù",
-    "english": "to bear; to owe; negative",
+    "character": "去年",
+    "pinyin": "qùnián",
+    "english": "last year",
     "level": 2
   },
   {
     "id": "174",
-    "character": "富",
-    "pinyin": "fù",
-    "english": "rich; wealth; abundant",
+    "character": "生日",
+    "pinyin": "shēngrì",
+    "english": "birthday",
     "level": 2
   },
   {
     "id": "175",
-    "character": "婦",
-    "pinyin": "fù",
-    "english": "woman; wife; married woman",
+    "character": "月",
+    "pinyin": "yuè",
+    "english": "month; moon",
     "level": 2
   },
   {
     "id": "176",
-    "character": "復",
-    "pinyin": "fù",
-    "english": "again; to repeat; complex",
+    "character": "日",
+    "pinyin": "rì",
+    "english": "day",
     "level": 2
   },
   {
     "id": "177",
-    "character": "赴",
-    "pinyin": "fù",
-    "english": "to go towards; to hastens",
+    "character": "星期",
+    "pinyin": "xīngqī",
+    "english": "week",
     "level": 2
   },
   {
     "id": "178",
-    "character": "該",
-    "pinyin": "gāi",
-    "english": "should; ought to; that",
+    "character": "星期天",
+    "pinyin": "xīngqítiān",
+    "english": "Sunday",
     "level": 2
   },
   {
     "id": "179",
-    "character": "蓋",
-    "pinyin": "gài",
-    "english": "to cover; lid; however",
+    "character": "週末",
+    "pinyin": "zhōumò",
+    "english": "weekend",
     "level": 2
   },
   {
     "id": "180",
-    "character": "乾",
-    "pinyin": "gān",
-    "english": "to do; trunk; dry",
+    "character": "號",
+    "pinyin": "hào",
+    "english": "number; date",
     "level": 2
   },
   {
     "id": "181",
-    "character": "感",
-    "pinyin": "gǎn",
-    "english": "to feel; sense; to move",
+    "character": "天",
+    "pinyin": "tiān",
+    "english": "day; sky",
     "level": 2
   },
   {
     "id": "182",
-    "character": "趕",
-    "pinyin": "gǎn",
-    "english": "to chase; to hurry",
+    "character": "從",
+    "pinyin": "cóng",
+    "english": "from",
     "level": 2
   },
   {
     "id": "183",
-    "character": "剛",
-    "pinyin": "gāng",
-    "english": "strong; just; rigid",
+    "character": "在",
+    "pinyin": "zài",
+    "english": "at; in",
     "level": 2
   },
   {
     "id": "184",
-    "character": "綱",
-    "pinyin": "gāng",
-    "english": "outline; main principle",
+    "character": "愛",
+    "pinyin": "ài",
+    "english": "to love; to like",
     "level": 2
   },
   {
     "id": "185",
-    "character": "港",
-    "pinyin": "gǎng",
-    "english": "harbor; port",
+    "character": "快樂",
+    "pinyin": "kuàilè",
+    "english": "happy; happiness",
     "level": 2
   },
   {
     "id": "186",
-    "character": "高",
-    "pinyin": "gāo",
-    "english": "high; tall; height",
+    "character": "太",
+    "pinyin": "tài",
+    "english": "too; extremely",
     "level": 2
   },
   {
     "id": "187",
-    "character": "膏",
-    "pinyin": "gāo",
-    "english": "fat; ointment; paste",
+    "character": "公園",
+    "pinyin": "gōngyuán",
+    "english": "park",
     "level": 2
   },
   {
     "id": "188",
-    "character": "糕",
-    "pinyin": "gāo",
-    "english": "cake; pastry",
+    "character": "國家",
+    "pinyin": "guójiā",
+    "english": "country; nation",
     "level": 2
   },
   {
     "id": "189",
-    "character": "告",
-    "pinyin": "gào",
-    "english": "to tell; to inform",
+    "character": "分鐘",
+    "pinyin": "fēnzhōng",
+    "english": "minute",
     "level": 2
   },
   {
     "id": "190",
-    "character": "格",
-    "pinyin": "gé",
-    "english": "grid; pattern; standard",
+    "character": "家人",
+    "pinyin": "jiārén",
+    "english": "family",
     "level": 2
   },
   {
     "id": "191",
-    "character": "革",
-    "pinyin": "gé",
-    "english": "leather; to reform",
+    "character": "胖",
+    "pinyin": "pàng",
+    "english": "fat",
     "level": 2
   },
   {
     "id": "192",
-    "character": "隔",
-    "pinyin": "gé",
-    "english": "to separate; to block",
+    "character": "矮",
+    "pinyin": "ǎi",
+    "english": "short (height)",
     "level": 2
   },
   {
     "id": "193",
-    "character": "根",
-    "pinyin": "gēn",
-    "english": "root; origin; base",
+    "character": "瘦",
+    "pinyin": "shòu",
+    "english": "thin",
     "level": 2
   },
   {
     "id": "194",
-    "character": "更",
-    "pinyin": "gèng",
-    "english": "more; even more; to change",
+    "character": "萬",
+    "pinyin": "wàn",
+    "english": "ten thousand",
     "level": 2
   },
   {
     "id": "195",
-    "character": "工",
-    "pinyin": "gōng",
-    "english": "work; labor; skill",
+    "character": "鐘頭",
+    "pinyin": "zhōngtóu",
+    "english": "hour",
     "level": 2
   },
   {
     "id": "196",
-    "character": "公",
-    "pinyin": "gōng",
-    "english": "public; official; fair",
+    "character": "晚",
+    "pinyin": "wǎn",
+    "english": "night; evening",
     "level": 2
   },
   {
     "id": "197",
-    "character": "功",
-    "pinyin": "gōng",
-    "english": "achievement; merit; success",
+    "character": "前天",
+    "pinyin": "qiántiān",
+    "english": "day before yesterday",
     "level": 2
   },
   {
     "id": "198",
-    "character": "宮",
-    "pinyin": "gōng",
-    "english": "palace; temple",
+    "character": "後天",
+    "pinyin": "hòutiān",
+    "english": "day after tomorrow",
     "level": 2
   },
   {
     "id": "199",
-    "character": "共",
-    "pinyin": "gòng",
-    "english": "altogether; total; together",
+    "character": "前年",
+    "pinyin": "qiánnián",
+    "english": "year before last",
     "level": 2
   },
   {
     "id": "200",
-    "character": "貢",
-    "pinyin": "gòng",
-    "english": "to offer; tribute; contribution",
+    "character": "後年",
+    "pinyin": "hòunián",
+    "english": "year after next",
     "level": 2
   },
   {
     "id": "201",
-    "character": "勾",
-    "pinyin": "gōu",
-    "english": "to hook; to draw",
+    "character": "自己",
+    "pinyin": "zìjǐ",
+    "english": "self",
     "level": 2
   },
   {
     "id": "202",
-    "character": "溝",
-    "pinyin": "gōu",
-    "english": "ditch; gully; furrow",
+    "character": "它",
+    "pinyin": "tā",
+    "english": "it",
     "level": 2
   },
   {
     "id": "203",
-    "character": "古",
-    "pinyin": "gǔ",
-    "english": "old; ancient; antiquity",
+    "character": "它們",
+    "pinyin": "tāmen",
+    "english": "they (things/animals)",
     "level": 2
   },
   {
     "id": "204",
-    "character": "谷",
-    "pinyin": "gǔ",
-    "english": "valley; grain; to echo",
+    "character": "最",
+    "pinyin": "zuì",
+    "english": "most",
     "level": 2
   },
   {
     "id": "205",
-    "character": "股",
-    "pinyin": "gǔ",
-    "english": "stock; thigh; share",
+    "character": "怕",
+    "pinyin": "pà",
+    "english": "to be afraid",
     "level": 2
   },
   {
     "id": "206",
-    "character": "故",
-    "pinyin": "gù",
-    "english": "reason; intentionally; old",
+    "character": "美",
+    "pinyin": "měi",
+    "english": "beautiful",
     "level": 2
   },
   {
     "id": "207",
-    "character": "顧",
-    "pinyin": "gù",
-    "english": "to look; to regard; customer",
+    "character": "應該",
+    "pinyin": "yīnggāi",
+    "english": "should",
     "level": 2
   },
   {
     "id": "208",
-    "character": "雇",
-    "pinyin": "gù",
-    "english": "to hire; to employ",
+    "character": "真的",
+    "pinyin": "zhēnde",
+    "english": "really; truly",
     "level": 2
   },
   {
     "id": "209",
-    "character": "固",
-    "pinyin": "gù",
-    "english": "solid; firm; certainly",
+    "character": "非常",
+    "pinyin": "fēicháng",
+    "english": "very",
     "level": 2
   },
   {
     "id": "210",
-    "character": "掛",
-    "pinyin": "guà",
-    "english": "to hang; to register; to dial",
+    "character": "工作",
+    "pinyin": "gōngzuò",
+    "english": "work; job",
     "level": 2
   },
   {
     "id": "211",
-    "character": "乖",
-    "pinyin": "guāi",
-    "english": "obedient; clever; well-behaved",
+    "character": "醫生",
+    "pinyin": "yīshēng",
+    "english": "doctor",
     "level": 2
   },
   {
     "id": "212",
-    "character": "怪",
-    "pinyin": "guài",
-    "english": "strange; odd; to blame",
+    "character": "一點",
+    "pinyin": "yìdiǎn",
+    "english": "a little",
     "level": 2
   },
   {
     "id": "213",
-    "character": "拐",
-    "pinyin": "guǎi",
-    "english": "to turn; crutch; to trick",
+    "character": "一些",
+    "pinyin": "yìxiē",
+    "english": "some",
     "level": 2
   },
   {
     "id": "214",
-    "character": "關",
-    "pinyin": "guān",
-    "english": "to close; gate; concern",
+    "character": "本",
+    "pinyin": "běn",
+    "english": "(measure) books",
     "level": 2
   },
   {
     "id": "215",
-    "character": "官",
-    "pinyin": "guān",
-    "english": "official; government; organ",
+    "character": "張",
+    "pinyin": "zhāng",
+    "english": "(measure) flat things",
     "level": 2
   },
   {
     "id": "216",
-    "character": "觀",
-    "pinyin": "guān",
-    "english": "to watch; view; idea",
+    "character": "英文",
+    "pinyin": "yīngwén",
+    "english": "English (language)",
     "level": 2
   },
   {
     "id": "217",
-    "character": "管",
-    "pinyin": "guǎn",
-    "english": "tube; to manage; pipe",
+    "character": "紙",
+    "pinyin": "zhǐ",
+    "english": "paper",
     "level": 2
   },
   {
     "id": "218",
-    "character": "貫",
-    "pinyin": "guàn",
-    "english": "to pass through; custom",
+    "character": "問題",
+    "pinyin": "wèntí",
+    "english": "question; problem",
     "level": 2
   },
   {
     "id": "219",
-    "character": "光",
-    "pinyin": "guāng",
-    "english": "light; bright; bare",
+    "character": "意思",
+    "pinyin": "yìsi",
+    "english": "meaning",
     "level": 2
   },
   {
     "id": "220",
-    "character": "廣",
-    "pinyin": "guǎng",
-    "english": "broad; wide; vast",
+    "character": "餐廳",
+    "pinyin": "cāntīng",
+    "english": "restaurant",
     "level": 2
   },
   {
     "id": "221",
-    "character": "逛",
-    "pinyin": "guàng",
-    "english": "to stroll; to wander",
+    "character": "畫",
+    "pinyin": "huà",
+    "english": "to draw; drawing",
     "level": 2
   },
   {
     "id": "222",
-    "character": "歸",
-    "pinyin": "guī",
-    "english": "to return; to restore",
+    "character": "讀",
+    "pinyin": "dú",
+    "english": "to read",
     "level": 2
   },
   {
     "id": "223",
-    "character": "龜",
-    "pinyin": "guī",
-    "english": "turtle; tortoise",
+    "character": "會",
+    "pinyin": "huì",
+    "english": "can; will",
     "level": 2
   },
   {
     "id": "224",
-    "character": "規",
-    "pinyin": "guī",
-    "english": "rule; law; measure",
+    "character": "為什麼",
+    "pinyin": "wèishénme",
+    "english": "why",
     "level": 2
   },
   {
     "id": "225",
-    "character": "軌",
-    "pinyin": "guǐ",
-    "english": "track; rail; path",
+    "character": "下課",
+    "pinyin": "xiàkè",
+    "english": "class ends",
     "level": 2
   },
   {
     "id": "226",
-    "character": "鬼",
-    "pinyin": "guǐ",
-    "english": "ghost; demon; tricky",
+    "character": "說話",
+    "pinyin": "shuōhuà",
+    "english": "to speak; talk",
     "level": 2
   },
   {
     "id": "227",
-    "character": "詭",
-    "pinyin": "guǐ",
-    "english": "deceitful; cunning; tricky",
+    "character": "考試",
+    "pinyin": "kǎoshì",
+    "english": "to take exam; exam",
     "level": 2
   },
   {
     "id": "228",
-    "character": "貴",
-    "pinyin": "guì",
-    "english": "expensive; noble; valuable",
+    "character": "懂",
+    "pinyin": "dǒng",
+    "english": "to understand",
     "level": 2
   },
   {
     "id": "229",
-    "character": "跪",
-    "pinyin": "guì",
-    "english": "to kneel; to genuflect",
+    "character": "念",
+    "pinyin": "niàn",
+    "english": "to read aloud; study",
     "level": 2
   },
   {
     "id": "230",
-    "character": "滾",
-    "pinyin": "gǔn",
-    "english": "to roll; to tumble; get out",
+    "character": "課",
+    "pinyin": "kè",
+    "english": "class; lesson",
     "level": 2
   },
   {
     "id": "231",
-    "character": "棍",
-    "pinyin": "gùn",
-    "english": "stick; club; rod",
+    "character": "教",
+    "pinyin": "jiāo",
+    "english": "to teach",
     "level": 2
   },
   {
     "id": "232",
-    "character": "國",
-    "pinyin": "guó",
-    "english": "country; nation; kingdom",
+    "character": "告訴",
+    "pinyin": "gàosù",
+    "english": "to tell",
     "level": 2
   },
   {
     "id": "233",
-    "character": "果",
-    "pinyin": "guǒ",
-    "english": "fruit; result; consequence",
+    "character": "錯",
+    "pinyin": "cuò",
+    "english": "wrong; mistake",
     "level": 2
   },
   {
     "id": "234",
-    "character": "裹",
-    "pinyin": "guǒ",
-    "english": "to wrap; to bundle",
+    "character": "功課",
+    "pinyin": "gōngkè",
+    "english": "homework",
     "level": 2
   },
   {
     "id": "235",
-    "character": "過",
-    "pinyin": "guò",
-    "english": "to pass; to exceed; particle",
+    "character": "教室",
+    "pinyin": "jiàoshì",
+    "english": "classroom",
     "level": 2
   },
   {
     "id": "236",
-    "character": "哈",
-    "pinyin": "hā",
-    "english": "ha; to laugh; haha",
+    "character": "句子",
+    "pinyin": "jùzi",
+    "english": "sentence",
     "level": 2
   },
   {
     "id": "237",
-    "character": "孩",
-    "pinyin": "háī",
-    "english": "child; boy; girl",
+    "character": "休息",
+    "pinyin": "xiūxí",
+    "english": "to rest",
     "level": 2
   },
   {
     "id": "238",
-    "character": "海",
-    "pinyin": "hǎi",
-    "english": "sea; ocean; vast",
+    "character": "房",
+    "pinyin": "fáng",
+    "english": "house",
     "level": 2
   },
   {
     "id": "239",
-    "character": "害",
-    "pinyin": "hài",
-    "english": "harm; to injure; damage",
+    "character": "房間",
+    "pinyin": "fángjiān",
+    "english": "room",
     "level": 2
   },
   {
     "id": "240",
-    "character": "含",
-    "pinyin": "hán",
-    "english": "to contain; to hold; to include",
+    "character": "樓",
+    "pinyin": "lóu",
+    "english": "floor; building",
     "level": 2
   },
   {
     "id": "241",
-    "character": "寒",
-    "pinyin": "hán",
-    "english": "cold; winter; poor",
+    "character": "門",
+    "pinyin": "mén",
+    "english": "door",
     "level": 2
   },
   {
     "id": "242",
-    "character": "函",
-    "pinyin": "hán",
-    "english": "letter; case; box",
+    "character": "門口",
+    "pinyin": "ménkǒu",
+    "english": "doorway; entrance",
     "level": 2
   },
   {
     "id": "243",
-    "character": "喊",
-    "pinyin": "hǎn",
-    "english": "to shout; to yell; to cry",
+    "character": "桌",
+    "pinyin": "zhuō",
+    "english": "table",
     "level": 2
   },
   {
     "id": "244",
-    "character": "罕",
-    "pinyin": "hǎn",
-    "english": "rare; seldom; rarely",
+    "character": "椅",
+    "pinyin": "yǐ",
+    "english": "chair",
     "level": 2
   },
   {
     "id": "245",
-    "character": "翰",
-    "pinyin": "hàn",
-    "english": "feather; literary; writing",
+    "character": "床",
+    "pinyin": "chuáng",
+    "english": "bed",
     "level": 2
   },
   {
     "id": "246",
-    "character": "撼",
-    "pinyin": "hàn",
-    "english": "to shake; to move",
+    "character": "開",
+    "pinyin": "kāi",
+    "english": "to open; turn on",
     "level": 2
   },
   {
     "id": "247",
-    "character": "杭",
-    "pinyin": "háng",
-    "english": "Hangzhou; to go; craft",
+    "character": "低",
+    "pinyin": "dī",
+    "english": "low",
     "level": 2
   },
   {
     "id": "248",
-    "character": "行",
-    "pinyin": "háng",
-    "english": "to go; row; trade; line",
+    "character": "不錯",
+    "pinyin": "búcuò",
+    "english": "not bad; pretty good",
     "level": 2
   },
   {
     "id": "249",
-    "character": "航",
-    "pinyin": "háng",
-    "english": "to sail; navigation; voyage",
+    "character": "天氣",
+    "pinyin": "tiānqì",
+    "english": "weather",
     "level": 2
   },
   {
     "id": "250",
-    "character": "好",
-    "pinyin": "hǎo",
-    "english": "good; well; OK; to like",
+    "character": "空氣",
+    "pinyin": "kōngqì",
+    "english": "air",
     "level": 2
   },
   {
     "id": "251",
-    "character": "號",
-    "pinyin": "hào",
-    "english": "number; mark; to call; size",
+    "character": "冷",
+    "pinyin": "lěng",
+    "english": "cold",
     "level": 2
   },
   {
     "id": "252",
-    "character": "毫",
-    "pinyin": "háo",
-    "english": "hair; fine; slight; milligram",
+    "character": "熱",
+    "pinyin": "rè",
+    "english": "hot",
     "level": 2
   },
   {
     "id": "253",
-    "character": "豪",
-    "pinyin": "háo",
-    "english": "bold; heroic; lavish",
+    "character": "雨",
+    "pinyin": "yǔ",
+    "english": "rain",
     "level": 2
   },
   {
     "id": "254",
-    "character": "郝",
-    "pinyin": "hǎo",
-    "english": "name; surname",
+    "character": "下雨",
+    "pinyin": "xiàyǔ",
+    "english": "to rain",
     "level": 2
   },
   {
     "id": "255",
-    "character": "合",
-    "pinyin": "hé",
-    "english": "to combine; to match; suitable",
+    "character": "風",
+    "pinyin": "fēng",
+    "english": "wind",
     "level": 2
   },
   {
     "id": "256",
-    "character": "何",
-    "pinyin": "hé",
-    "english": "what; how; which",
+    "character": "山",
+    "pinyin": "shān",
+    "english": "mountain",
     "level": 2
   },
   {
     "id": "257",
-    "character": "河",
-    "pinyin": "hé",
-    "english": "river; stream",
+    "character": "花",
+    "pinyin": "huā",
+    "english": "flower",
     "level": 2
   },
   {
     "id": "258",
-    "character": "核",
-    "pinyin": "hé",
-    "english": "seed; kernel; to examine",
+    "character": "枝",
+    "pinyin": "zhī",
+    "english": "(measure) long thin things",
     "level": 2
   },
   {
     "id": "259",
-    "character": "禾",
-    "pinyin": "hé",
-    "english": "grain; rice; millet",
+    "character": "魚",
+    "pinyin": "yú",
+    "english": "fish",
     "level": 2
   },
   {
     "id": "260",
-    "character": "黑",
-    "pinyin": "hēi",
-    "english": "black; dark; illegal",
+    "character": "雞",
+    "pinyin": "jī",
+    "english": "chicken",
     "level": 2
   },
   {
     "id": "261",
-    "character": "嘿",
-    "pinyin": "hēi",
-    "english": "hey; interjection",
+    "character": "牛",
+    "pinyin": "niú",
+    "english": "cow; ox",
     "level": 2
   },
   {
     "id": "262",
-    "character": "很",
-    "pinyin": "hěn",
-    "english": "very; quite; much",
+    "character": "豬",
+    "pinyin": "zhū",
+    "english": "pig",
     "level": 2
   },
   {
     "id": "263",
-    "character": "恨",
-    "pinyin": "hèn",
-    "english": "to hate; to resent",
+    "character": "咖啡",
+    "pinyin": "kāfēi",
+    "english": "coffee",
     "level": 2
   },
   {
     "id": "264",
-    "character": "紅",
-    "pinyin": "hóng",
-    "english": "red; rainbow; popular",
+    "character": "茶",
+    "pinyin": "chá",
+    "english": "tea",
     "level": 2
   },
   {
     "id": "265",
-    "character": "弘",
-    "pinyin": "hóng",
-    "english": "broad; vast; to expound",
+    "character": "用",
+    "pinyin": "yòng",
+    "english": "to use",
     "level": 2
   },
   {
     "id": "266",
-    "character": "洪",
-    "pinyin": "hóng",
-    "english": "flood; vast; surging",
+    "character": "穿",
+    "pinyin": "chuān",
+    "english": "to wear",
     "level": 2
   },
   {
     "id": "267",
-    "character": "宏",
-    "pinyin": "hóng",
-    "english": "grand; vast; great",
+    "character": "起床",
+    "pinyin": "qǐchuáng",
+    "english": "to get up",
     "level": 2
   },
   {
     "id": "268",
-    "character": "哄",
-    "pinyin": "hōng",
-    "english": "to coax; to fool; to crowd",
+    "character": "方便",
+    "pinyin": "fāngbiàn",
+    "english": "convenient",
     "level": 2
   },
   {
     "id": "269",
-    "character": "烘",
-    "pinyin": "hōng",
-    "english": "to roast; to warm; to bake",
+    "character": "睡覺",
+    "pinyin": "shuìjiào",
+    "english": "to sleep",
     "level": 2
   },
   {
     "id": "270",
-    "character": "轟",
-    "pinyin": "hōng",
-    "english": "to thunder; loud noise",
+    "character": "起來",
+    "pinyin": "qǐlái",
+    "english": "to get up; stand up",
     "level": 2
   },
   {
     "id": "271",
-    "character": "譁",
-    "pinyin": "huā",
-    "english": "clamorous; loud; clamor",
+    "character": "先",
+    "pinyin": "xiān",
+    "english": "first",
     "level": 2
   },
   {
     "id": "272",
-    "character": "華",
-    "pinyin": "huá",
-    "english": "brilliant; splendid; China",
+    "character": "常常",
+    "pinyin": "chángcháng",
+    "english": "often",
     "level": 2
   },
   {
     "id": "273",
-    "character": "滑",
-    "pinyin": "huá",
-    "english": "slippery; smooth; to glide",
+    "character": "每",
+    "pinyin": "měi",
+    "english": "every",
     "level": 2
   },
   {
     "id": "274",
-    "character": "化",
-    "pinyin": "huà",
-    "english": "to change; to transform",
+    "character": "打",
+    "pinyin": "dǎ",
+    "english": "to hit; do actions",
     "level": 2
   },
   {
     "id": "275",
-    "character": "畫",
-    "pinyin": "huà",
-    "english": "picture; to draw; painting",
+    "character": "玩",
+    "pinyin": "wán",
+    "english": "to play; have fun",
     "level": 2
   },
   {
     "id": "276",
-    "character": "話",
-    "pinyin": "huà",
-    "english": "talk; word; speech",
+    "character": "運動",
+    "pinyin": "yùndòng",
+    "english": "sports; exercise",
     "level": 2
   },
   {
     "id": "277",
-    "character": "懷",
-    "pinyin": "huái",
-    "english": "to cherish; to conceive",
+    "character": "走路",
+    "pinyin": "zǒulù",
+    "english": "to walk",
     "level": 2
   },
   {
     "id": "278",
-    "character": "淮",
-    "pinyin": "huái",
-    "english": "Huai River; broad",
+    "character": "唱歌",
+    "pinyin": "chànggē",
+    "english": "to sing",
     "level": 2
   },
   {
     "id": "279",
-    "character": "壞",
-    "pinyin": "huài",
-    "english": "bad; broken; spoiled",
+    "character": "跳",
+    "pinyin": "tiào",
+    "english": "to jump",
     "level": 2
   },
   {
     "id": "280",
-    "character": "歡",
-    "pinyin": "huān",
-    "english": "joyful; happy; to like",
+    "character": "還",
+    "pinyin": "hái",
+    "english": "still; also",
     "level": 2
   },
   {
     "id": "281",
-    "character": "還",
-    "pinyin": "huán",
-    "english": "to return; to give back; still",
+    "character": "唱",
+    "pinyin": "chàng",
+    "english": "to sing",
     "level": 2
   },
   {
     "id": "282",
-    "character": "環",
-    "pinyin": "huán",
-    "english": "ring; circle; loop",
+    "character": "歌",
+    "pinyin": "gē",
+    "english": "song",
     "level": 2
   },
   {
     "id": "283",
-    "character": "緩",
-    "pinyin": "huǎn",
-    "english": "slow; to delay; unhurried",
+    "character": "跳舞",
+    "pinyin": "tiàowǔ",
+    "english": "to dance",
     "level": 2
   },
   {
     "id": "284",
-    "character": "幻",
-    "pinyin": "huàn",
-    "english": "illusion; fantasy; unreal",
+    "character": "又",
+    "pinyin": "yòu",
+    "english": "again; also",
     "level": 2
   },
   {
     "id": "285",
-    "character": "換",
-    "pinyin": "huàn",
-    "english": "to exchange; to change",
+    "character": "球",
+    "pinyin": "qiú",
+    "english": "ball",
     "level": 2
   },
   {
     "id": "286",
-    "character": "患",
-    "pinyin": "huàn",
-    "english": "disaster; illness; danger",
+    "character": "介紹",
+    "pinyin": "jièshào",
+    "english": "to introduce",
     "level": 2
   },
   {
     "id": "287",
-    "character": "喚",
-    "pinyin": "huàn",
-    "english": "to call; to summon; to awaken",
+    "character": "沒關係",
+    "pinyin": "méi guānxi",
+    "english": "it's okay; no problem",
     "level": 2
   },
   {
     "id": "288",
-    "character": "荒",
-    "pinyin": "huāng",
-    "english": "wild; desolate; deserted",
+    "character": "事",
+    "pinyin": "shì",
+    "english": "thing; matter",
     "level": 2
   },
   {
     "id": "289",
-    "character": "黃",
-    "pinyin": "huáng",
-    "english": "yellow; to fall through",
+    "character": "怎麼",
+    "pinyin": "zěnme",
+    "english": "how; what to do",
     "level": 2
   },
   {
     "id": "290",
-    "character": "皇",
-    "pinyin": "huáng",
-    "english": "emperor; imperial; sovereign",
+    "character": "哪",
+    "pinyin": "nǎ",
+    "english": "which; where",
     "level": 2
   },
   {
     "id": "291",
-    "character": "隸",
-    "pinyin": "lì",
-    "english": "slave; subordinate; official script",
+    "character": "裡面",
+    "pinyin": "lǐmiàn",
+    "english": "inside",
     "level": 2
   },
   {
     "id": "292",
-    "character": "律",
-    "pinyin": "lǜ",
-    "english": "law; rule; musical tone",
+    "character": "上",
+    "pinyin": "shàng",
+    "english": "on; above",
     "level": 2
   },
   {
     "id": "293",
-    "character": "略",
-    "pinyin": "lüè",
-    "english": "strategy; to omit; slightly",
+    "character": "下",
+    "pinyin": "xià",
+    "english": "under; below",
     "level": 2
   },
   {
     "id": "294",
-    "character": "綠",
-    "pinyin": "lǜ",
-    "english": "green; chlorophyll",
+    "character": "外",
+    "pinyin": "wài",
+    "english": "outside",
     "level": 2
   },
   {
     "id": "295",
-    "character": "濾",
-    "pinyin": "lǜ",
-    "english": "to filter; to strain",
+    "character": "外頭",
+    "pinyin": "wàitou",
+    "english": "outside",
     "level": 2
   },
   {
     "id": "296",
-    "character": "媽",
-    "pinyin": "mā",
-    "english": "mom; mother; mama",
+    "character": "前",
+    "pinyin": "qián",
+    "english": "front",
     "level": 2
   },
   {
     "id": "297",
-    "character": "麻",
-    "pinyin": "má",
-    "english": "hemp; linen; sesame",
+    "character": "後",
+    "pinyin": "hòu",
+    "english": "back; later",
     "level": 2
   },
   {
     "id": "298",
-    "character": "馬",
-    "pinyin": "mǎ",
-    "english": "horse; to ride; surname",
+    "character": "左",
+    "pinyin": "zuǒ",
+    "english": "left side",
     "level": 2
   },
   {
     "id": "299",
-    "character": "罵",
-    "pinyin": "mà",
-    "english": "to scold; to curse; to revile",
+    "character": "右",
+    "pinyin": "yòu",
+    "english": "right side",
     "level": 2
   },
   {
     "id": "300",
-    "character": "買",
-    "pinyin": "mǎi",
-    "english": "to buy; to purchase",
+    "character": "旁",
+    "pinyin": "páng",
+    "english": "beside",
+    "level": 2
+  },
+  {
+    "id": "301",
+    "character": "裡",
+    "pinyin": "lǐ",
+    "english": "inside",
+    "level": 2
+  },
+  {
+    "id": "302",
+    "character": "中",
+    "pinyin": "zhōng",
+    "english": "middle",
+    "level": 2
+  },
+  {
+    "id": "303",
+    "character": "地方",
+    "pinyin": "dìfāng",
+    "english": "place",
+    "level": 2
+  },
+  {
+    "id": "304",
+    "character": "附近",
+    "pinyin": "fùjìn",
+    "english": "nearby",
+    "level": 2
+  },
+  {
+    "id": "305",
+    "character": "帶",
+    "pinyin": "dài",
+    "english": "to bring",
+    "level": 2
+  },
+  {
+    "id": "306",
+    "character": "拿",
+    "pinyin": "ná",
+    "english": "to take; hold",
+    "level": 2
+  },
+  {
+    "id": "307",
+    "character": "站",
+    "pinyin": "zhàn",
+    "english": "to stand",
+    "level": 2
+  },
+  {
+    "id": "308",
+    "character": "快",
+    "pinyin": "kuài",
+    "english": "fast; quick",
+    "level": 2
+  },
+  {
+    "id": "309",
+    "character": "慢",
+    "pinyin": "màn",
+    "english": "slow",
+    "level": 2
+  },
+  {
+    "id": "310",
+    "character": "計程車",
+    "pinyin": "jìchéngchē",
+    "english": "taxi",
+    "level": 2
+  },
+  {
+    "id": "311",
+    "character": "火車",
+    "pinyin": "huǒchē",
+    "english": "train",
+    "level": 2
+  },
+  {
+    "id": "312",
+    "character": "飛機",
+    "pinyin": "fēijī",
+    "english": "airplane",
+    "level": 2
+  },
+  {
+    "id": "313",
+    "character": "輛",
+    "pinyin": "liàng",
+    "english": "(measure) vehicles",
+    "level": 2
+  },
+  {
+    "id": "314",
+    "character": "出",
+    "pinyin": "chū",
+    "english": "to go out",
+    "level": 2
+  },
+  {
+    "id": "315",
+    "character": "進",
+    "pinyin": "jìn",
+    "english": "to enter",
+    "level": 2
+  },
+  {
+    "id": "316",
+    "character": "外國",
+    "pinyin": "wàiguó",
+    "english": "foreign country; abroad",
+    "level": 2
+  },
+  {
+    "id": "317",
+    "character": "手",
+    "pinyin": "shǒu",
+    "english": "hand",
+    "level": 2
+  },
+  {
+    "id": "318",
+    "character": "腳",
+    "pinyin": "jiǎo",
+    "english": "foot",
+    "level": 2
+  },
+  {
+    "id": "319",
+    "character": "身體",
+    "pinyin": "shēntǐ",
+    "english": "body; health",
+    "level": 2
+  },
+  {
+    "id": "320",
+    "character": "眼睛",
+    "pinyin": "yǎnjīng",
+    "english": "eye(s)",
+    "level": 2
+  },
+  {
+    "id": "321",
+    "character": "鼻",
+    "pinyin": "bí",
+    "english": "nose",
+    "level": 2
+  },
+  {
+    "id": "322",
+    "character": "藥",
+    "pinyin": "yào",
+    "english": "medicine",
+    "level": 2
+  },
+  {
+    "id": "323",
+    "character": "累",
+    "pinyin": "lèi",
+    "english": "tired",
+    "level": 2
+  },
+  {
+    "id": "324",
+    "character": "頭",
+    "pinyin": "tóu",
+    "english": "head",
+    "level": 2
+  },
+  {
+    "id": "325",
+    "character": "耳朵",
+    "pinyin": "ěrduo",
+    "english": "ear(s)",
+    "level": 2
+  },
+  {
+    "id": "326",
+    "character": "感冒",
+    "pinyin": "gǎnmào",
+    "english": "to catch a cold",
+    "level": 2
+  },
+  {
+    "id": "327",
+    "character": "生病",
+    "pinyin": "shēngbìng",
+    "english": "to get sick",
+    "level": 2
+  },
+  {
+    "id": "328",
+    "character": "餓",
+    "pinyin": "è",
+    "english": "hungry",
+    "level": 2
+  },
+  {
+    "id": "329",
+    "character": "痛",
+    "pinyin": "tòng",
+    "english": "pain; sore",
+    "level": 2
+  },
+  {
+    "id": "330",
+    "character": "嘴巴",
+    "pinyin": "zuǐba",
+    "english": "mouth",
+    "level": 2
+  },
+  {
+    "id": "331",
+    "character": "病",
+    "pinyin": "bìng",
+    "english": "illness",
+    "level": 2
+  },
+  {
+    "id": "332",
+    "character": "看病",
+    "pinyin": "kànbìng",
+    "english": "to see a doctor",
+    "level": 2
+  },
+  {
+    "id": "333",
+    "character": "元",
+    "pinyin": "yuán",
+    "english": "dollar (NTD/RMB)",
+    "level": 2
+  },
+  {
+    "id": "334",
+    "character": "鞋",
+    "pinyin": "xié",
+    "english": "shoes",
+    "level": 2
+  },
+  {
+    "id": "335",
+    "character": "衣服",
+    "pinyin": "yīfú",
+    "english": "clothes",
+    "level": 2
+  },
+  {
+    "id": "336",
+    "character": "比",
+    "pinyin": "bǐ",
+    "english": "to compare",
+    "level": 2
+  },
+  {
+    "id": "337",
+    "character": "要",
+    "pinyin": "yào",
+    "english": "to want; need",
+    "level": 2
+  },
+  {
+    "id": "338",
+    "character": "長",
+    "pinyin": "cháng",
+    "english": "long",
+    "level": 2
+  },
+  {
+    "id": "339",
+    "character": "新",
+    "pinyin": "xīn",
+    "english": "new",
+    "level": 2
+  },
+  {
+    "id": "340",
+    "character": "一樣",
+    "pinyin": "yíyàng",
+    "english": "same",
+    "level": 2
+  },
+  {
+    "id": "341",
+    "character": "見",
+    "pinyin": "jiàn",
+    "english": "to see; meet",
+    "level": 2
+  },
+  {
+    "id": "342",
+    "character": "看見",
+    "pinyin": "kànjiàn",
+    "english": "to see (catch sight)",
+    "level": 2
+  },
+  {
+    "id": "343",
+    "character": "聽見",
+    "pinyin": "tīngjiàn",
+    "english": "to hear",
+    "level": 2
+  },
+  {
+    "id": "344",
+    "character": "店",
+    "pinyin": "diàn",
+    "english": "shop; store",
+    "level": 2
+  },
+  {
+    "id": "345",
+    "character": "短",
+    "pinyin": "duǎn",
+    "english": "short (length)",
+    "level": 2
+  },
+  {
+    "id": "346",
+    "character": "飽",
+    "pinyin": "bǎo",
+    "english": "full (after eating)",
+    "level": 2
+  },
+  {
+    "id": "347",
+    "character": "舊",
+    "pinyin": "jiù",
+    "english": "old",
+    "level": 2
+  },
+  {
+    "id": "348",
+    "character": "像",
+    "pinyin": "xiàng",
+    "english": "to resemble; like",
+    "level": 2
+  },
+  {
+    "id": "349",
+    "character": "一共",
+    "pinyin": "yígòng",
+    "english": "in total",
+    "level": 2
+  },
+  {
+    "id": "350",
+    "character": "夠",
+    "pinyin": "gòu",
+    "english": "enough",
+    "level": 2
+  },
+  {
+    "id": "351",
+    "character": "筷",
+    "pinyin": "kuài",
+    "english": "chopsticks",
+    "level": 2
+  },
+  {
+    "id": "352",
+    "character": "件",
+    "pinyin": "jiàn",
+    "english": "(measure) clothes/items",
+    "level": 2
+  },
+  {
+    "id": "353",
+    "character": "杯",
+    "pinyin": "bēi",
+    "english": "(measure) cups",
+    "level": 2
+  },
+  {
+    "id": "354",
+    "character": "杯",
+    "pinyin": "bēi",
+    "english": "cup",
+    "level": 2
+  },
+  {
+    "id": "355",
+    "character": "菜",
+    "pinyin": "cài",
+    "english": "dish; vegetable",
+    "level": 2
+  },
+  {
+    "id": "356",
+    "character": "肉",
+    "pinyin": "ròu",
+    "english": "meat",
+    "level": 2
+  },
+  {
+    "id": "357",
+    "character": "酒",
+    "pinyin": "jiǔ",
+    "english": "alcohol",
+    "level": 2
+  },
+  {
+    "id": "358",
+    "character": "喝",
+    "pinyin": "hē",
+    "english": "to drink",
+    "level": 2
+  },
+  {
+    "id": "359",
+    "character": "少",
+    "pinyin": "shǎo",
+    "english": "few; little",
+    "level": 2
+  },
+  {
+    "id": "360",
+    "character": "多",
+    "pinyin": "duō",
+    "english": "many; much; more",
+    "level": 2
+  },
+  {
+    "id": "361",
+    "character": "小吃",
+    "pinyin": "xiǎochī",
+    "english": "snack; street food",
+    "level": 2
+  },
+  {
+    "id": "362",
+    "character": "牛奶",
+    "pinyin": "niúnǎi",
+    "english": "milk",
+    "level": 2
+  },
+  {
+    "id": "363",
+    "character": "蛋",
+    "pinyin": "dàn",
+    "english": "egg",
+    "level": 2
+  },
+  {
+    "id": "364",
+    "character": "餃",
+    "pinyin": "jiǎo",
+    "english": "dumpling",
+    "level": 2
+  },
+  {
+    "id": "365",
+    "character": "麵",
+    "pinyin": "miàn",
+    "english": "noodles",
+    "level": 2
+  },
+  {
+    "id": "366",
+    "character": "湯",
+    "pinyin": "tāng",
+    "english": "soup",
+    "level": 2
+  },
+  {
+    "id": "367",
+    "character": "包子",
+    "pinyin": "bāozi",
+    "english": "steamed bun",
+    "level": 2
+  },
+  {
+    "id": "368",
+    "character": "蛋糕",
+    "pinyin": "dàngāo",
+    "english": "cake",
+    "level": 2
+  },
+  {
+    "id": "369",
+    "character": "麵包",
+    "pinyin": "miànbāo",
+    "english": "bread",
+    "level": 2
+  },
+  {
+    "id": "370",
+    "character": "水果",
+    "pinyin": "shuǐguǒ",
+    "english": "fruit",
+    "level": 2
+  },
+  {
+    "id": "371",
+    "character": "香蕉",
+    "pinyin": "xiāngjiāo",
+    "english": "banana",
+    "level": 2
+  },
+  {
+    "id": "372",
+    "character": "食物",
+    "pinyin": "shíwù",
+    "english": "food",
+    "level": 2
+  },
+  {
+    "id": "373",
+    "character": "飲料",
+    "pinyin": "yǐnliào",
+    "english": "drink; beverage",
+    "level": 2
+  },
+  {
+    "id": "374",
+    "character": "果汁",
+    "pinyin": "guǒzhī",
+    "english": "juice",
+    "level": 2
+  },
+  {
+    "id": "375",
+    "character": "甜",
+    "pinyin": "tián",
+    "english": "sweet",
+    "level": 2
+  },
+  {
+    "id": "376",
+    "character": "菜單",
+    "pinyin": "càidān",
+    "english": "menu",
+    "level": 2
+  },
+  {
+    "id": "377",
+    "character": "巧克力",
+    "pinyin": "qiǎokèlì",
+    "english": "chocolate",
+    "level": 2
+  },
+  {
+    "id": "378",
+    "character": "碗",
+    "pinyin": "wǎn",
+    "english": "bowl; (measure) bowls",
+    "level": 2
+  },
+  {
+    "id": "379",
+    "character": "冰",
+    "pinyin": "bīng",
+    "english": "ice",
+    "level": 2
+  },
+  {
+    "id": "380",
+    "character": "一起",
+    "pinyin": "yìqǐ",
+    "english": "together",
+    "level": 2
+  },
+  {
+    "id": "381",
+    "character": "因為",
+    "pinyin": "yīnwèi",
+    "english": "because",
+    "level": 2
+  },
+  {
+    "id": "382",
+    "character": "和",
+    "pinyin": "hé",
+    "english": "and",
+    "level": 2
+  },
+  {
+    "id": "383",
+    "character": "所以",
+    "pinyin": "suǒyǐ",
+    "english": "so; therefore",
+    "level": 2
+  },
+  {
+    "id": "384",
+    "character": "跟",
+    "pinyin": "gēn",
+    "english": "with; and",
+    "level": 2
+  },
+  {
+    "id": "385",
+    "character": "一定",
+    "pinyin": "yídìng",
+    "english": "definitely; must",
+    "level": 2
+  },
+  {
+    "id": "386",
+    "character": "可能",
+    "pinyin": "kěnéng",
+    "english": "maybe; possible",
+    "level": 2
+  },
+  {
+    "id": "387",
+    "character": "邊",
+    "pinyin": "biān",
+    "english": "side; edge",
+    "level": 2
+  },
+  {
+    "id": "388",
+    "character": "別",
+    "pinyin": "bié",
+    "english": "don't",
+    "level": 2
+  },
+  {
+    "id": "389",
+    "character": "馬上",
+    "pinyin": "mǎshàng",
+    "english": "immediately",
+    "level": 2
+  },
+  {
+    "id": "390",
+    "character": "然後",
+    "pinyin": "ránhòu",
+    "english": "then; after that",
+    "level": 2
+  },
+  {
+    "id": "391",
+    "character": "得",
+    "pinyin": "děi",
+    "english": "have to; must",
+    "level": 2
+  },
+  {
+    "id": "392",
+    "character": "著",
+    "pinyin": "zhe",
+    "english": "(particle) wearing; ongoing",
+    "level": 2
+  },
+  {
+    "id": "393",
+    "character": "有點",
+    "pinyin": "yǒudiǎn",
+    "english": "a bit; somewhat",
+    "level": 2
+  },
+  {
+    "id": "394",
+    "character": "啊",
+    "pinyin": "ā",
+    "english": "interjection",
     "level": 2
   }
 ]
