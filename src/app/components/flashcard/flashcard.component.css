@@ -67,6 +67,32 @@
   padding: 0 20px;
 }
 
+.audio-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.audio-btn {
+  background: none;
+  border: 2px solid rgba(235, 255, 0, 0.4);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, background-color 0.2s;
+  line-height: 1;
+}
+
+.audio-btn:hover {
+  border-color: rgba(235, 255, 0, 0.96);
+  background-color: rgba(235, 255, 0, 0.1);
+}
+
 @media (max-width: 768px) {
   .card {
     width: 250px;

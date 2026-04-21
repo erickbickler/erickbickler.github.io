@@ -9,3 +9,6 @@
     </div>
   </div>
 </div>
+<div class="audio-controls" *ngIf="card">
+  <button class="audio-btn" (click)="onPlayAudio($event)" title="Listen to pronunciation">🔊</button>
+</div>

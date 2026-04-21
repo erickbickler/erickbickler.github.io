@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TocflCard, CardState } from '../../Models/flashcard.model';
 import { FlashcardService } from '../../services/flashcard.service';
 import { StorageService } from '../../services/storage.service';
+import { AudioService } from '../../services/audio.service';
 
 @Component({
   selector: 'app-flashcards-page',
@@ -18,15 +19,28 @@ export class FlashcardsPageComponent implements OnInit {
   cardIndex = 0;
   isComplete = false;
   loading = true;
+  autoPlay = false;
 
   constructor(
     private flashcardService: FlashcardService,
-    private storage: StorageService
+    private storage: StorageService,
+    private audio: AudioService
   ) { }
 
   ngOnInit(): void {
     this.enabledLevels = this.storage.getEnabledLevels();
+    this.autoPlay = this.storage.getAutoPlay();
     this.loadCards();
+  }
+
+  onAutoPlayChange(): void {
+    this.storage.saveAutoPlay(this.autoPlay);
+  }
+
+  private speakCurrentCard(): void {
+    if (this.autoPlay && this.currentCard) {
+      this.audio.speak(this.currentCard.character);
+    }
   }
 
   loadCards(): void {
@@ -46,6 +60,7 @@ export class FlashcardsPageComponent implements OnInit {
       }
 
       this.loading = false;
+      this.speakCurrentCard();
     });
   }
 
@@ -69,6 +84,7 @@ export class FlashcardsPageComponent implements OnInit {
       setTimeout(() => {
         this.skipCardAnimation = false;
       }, 50);
+      this.speakCurrentCard();
     }
   }
 

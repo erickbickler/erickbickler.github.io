@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { TocflCard } from '../../Models/flashcard.model';
+import { AudioService } from '../../services/audio.service';
 
 @Component({
   selector: 'app-flashcard',
@@ -12,7 +13,16 @@ export class FlashcardComponent {
   @Input() skipAnimation = false;
   @Output() flipCard = new EventEmitter<void>();
 
+  constructor(private audio: AudioService) {}
+
   onCardClick(): void {
     this.flipCard.emit();
+  }
+
+  onPlayAudio(event: MouseEvent): void {
+    event.stopPropagation();
+    if (this.card) {
+      this.audio.speak(this.card.character);
+    }
   }
 }

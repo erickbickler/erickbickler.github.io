@@ -1,7 +1,34 @@
 <div class="flashcards-page">
-  <div class="page-header">
-    <h1>Chinese Flashcards</h1>
-    <p>Spaced repetition learning for HSK levels 1-3</p>
+
+  <div *ngIf="loading" class="loading">
+    Loading cards...
+  </div>
+
+  <div *ngIf="!loading && enabledLevels[0] === false && enabledLevels[1] === false && enabledLevels[2] === false" class="empty-state">
+    <p>Please select at least one TOCFL level to begin.</p>
+  </div>
+
+  <div *ngIf="!loading && isComplete" class="complete-state">
+    <h2>All caught up! 🎉</h2>
+    <p>You've reviewed all your due cards. Come back later to continue learning.</p>
+  </div>
+
+  <div *ngIf="!loading && !isComplete && currentCard && (enabledLevels[0] || enabledLevels[1] || enabledLevels[2])" class="card-section">
+    <app-flashcard
+      [card]="currentCard"
+      [flipped]="isFlipped"
+      [skipAnimation]="skipCardAnimation"
+      (flipCard)="onFlip()"
+    ></app-flashcard>
+
+    <app-rating-buttons
+      *ngIf="isFlipped"
+      (rate)="onRate($event)"
+    ></app-rating-buttons>
+  </div>
+
+  <div class="stats">
+    <p>{{ deckStats }}</p>
   </div>
 
   <div *ngIf="!loading" class="summary-section">
@@ -47,36 +74,17 @@
         <span class="checkbox-text">TOCFL Level 1</span>
       </label>
     </div>
+
+    <div class="autoplay-toggle">
+      <label class="checkbox-label">
+        <input
+          type="checkbox"
+          [(ngModel)]="autoPlay"
+          (change)="onAutoPlayChange()"
+        />
+        <span class="checkbox-text">🔊 Auto-play audio</span>
+      </label>
+    </div>
   </div>
 
-  <div class="stats">
-    <p>{{ deckStats }}</p>
-  </div>
-
-  <div *ngIf="loading" class="loading">
-    Loading cards...
-  </div>
-
-  <div *ngIf="!loading && enabledLevels[0] === false && enabledLevels[1] === false && enabledLevels[2] === false" class="empty-state">
-    <p>Please select at least one TOCFL level to begin.</p>
-  </div>
-
-  <div *ngIf="!loading && isComplete" class="complete-state">
-    <h2>All caught up! 🎉</h2>
-    <p>You've reviewed all your due cards. Come back later to continue learning.</p>
-  </div>
-
-  <div *ngIf="!loading && !isComplete && currentCard && (enabledLevels[0] || enabledLevels[1] || enabledLevels[2])" class="card-section">
-    <app-flashcard
-      [card]="currentCard"
-      [flipped]="isFlipped"
-      [skipAnimation]="skipCardAnimation"
-      (flipCard)="onFlip()"
-    ></app-flashcard>
-
-    <app-rating-buttons
-      *ngIf="isFlipped"
-      (rate)="onRate($event)"
-    ></app-rating-buttons>
-  </div>
 </div>

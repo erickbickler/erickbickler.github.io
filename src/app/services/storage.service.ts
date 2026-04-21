@@ -33,6 +33,14 @@ export class StorageService {
     this.setCookie('tocfl_levels', cookieValue, 30);
   }
 
+  getAutoPlay(): boolean {
+    return localStorage.getItem('tocfl_autoplay') === '1';
+  }
+
+  saveAutoPlay(value: boolean): void {
+    localStorage.setItem('tocfl_autoplay', value ? '1' : '0');
+  }
+
   private getCookie(name: string): string | null {
     const nameEQ = name + '=';
     const cookies = document.cookie.split(';');
