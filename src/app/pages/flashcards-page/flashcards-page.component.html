@@ -4,6 +4,21 @@
     <p>Spaced repetition learning for HSK levels 1-3</p>
   </div>
 
+  <div *ngIf="!loading" class="summary-section">
+    <div class="summary-card mastered">
+      <div class="summary-count">{{ masteredCount }}</div>
+      <div class="summary-label">Mastered</div>
+    </div>
+    <div class="summary-card learning">
+      <div class="summary-count">{{ learningCount }}</div>
+      <div class="summary-label">Learning</div>
+    </div>
+    <div class="summary-card new">
+      <div class="summary-count">{{ newCount }}</div>
+      <div class="summary-label">New</div>
+    </div>
+  </div>
+
   <div class="level-selector">
     <h3>Learning Levels</h3>
     <div class="checkbox-group">

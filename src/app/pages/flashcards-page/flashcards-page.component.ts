@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HskCard } from '../../models/flashcard.model';
+import { HskCard, CardState } from '../../models/flashcard.model';
 import { FlashcardService } from '../../services/flashcard.service';
 import { StorageService } from '../../services/storage.service';
 
@@ -77,5 +77,41 @@ export class FlashcardsPageComponent implements OnInit {
     if (this.dueCards.length === 0) return 'No cards due';
     const remaining = this.dueCards.length - this.cardIndex;
     return `${remaining} card${remaining !== 1 ? 's' : ''} remaining`;
+  }
+
+  get masteredCount(): number {
+    return this.countByCategory('mastered');
+  }
+
+  get learningCount(): number {
+    return this.countByCategory('learning');
+  }
+
+  get newCount(): number {
+    return this.countByCategory('new');
+  }
+
+  private countByCategory(category: 'mastered' | 'learning' | 'new'): number {
+    const states = this.storage.getCardStates();
+    return this.allCards.filter(card => this.getCategoryForCard(card, states[card.id]) === category).length;
+  }
+
+  private getCategoryForCard(card: HskCard, state?: CardState): 'mastered' | 'learning' | 'new' {
+    if (!state) {
+      return 'new';
+    }
+
+    // Mastered: 3+ repetitions and interval >= 7 days (learned well)
+    if (state.repetitions >= 3 && state.interval >= 7) {
+      return 'mastered';
+    }
+
+    // Learning: 1-2 repetitions (actively studying)
+    if (state.repetitions >= 1 && state.repetitions < 3) {
+      return 'learning';
+    }
+
+    // New: 0 repetitions
+    return 'new';
   }
 }
