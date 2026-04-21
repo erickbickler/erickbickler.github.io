@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, forkJoin, of } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { HskCard, CardState } from '../models/flashcard.model';
+import { TocflCard, CardState } from '../models/flashcard.model';
 import { Sm2Service } from './sm2.service';
 import { StorageService } from './storage.service';
 
@@ -17,17 +17,17 @@ export class FlashcardService {
     private storage: StorageService
   ) { }
 
-  loadCards(levels: boolean[]): Observable<HskCard[]> {
-    const requests: Observable<HskCard[]>[] = [];
+  loadCards(levels: boolean[]): Observable<TocflCard[]> {
+    const requests: Observable<TocflCard[]>[] = [];
 
     if (levels[0]) {
-      requests.push(this.http.get<HskCard[]>('assets/data/hsk1.json'));
+      requests.push(this.http.get<TocflCard[]>('assets/data/tocfl1.json'));
     }
     if (levels[1]) {
-      requests.push(this.http.get<HskCard[]>('assets/data/hsk2.json'));
+      requests.push(this.http.get<TocflCard[]>('assets/data/tocfl2.json'));
     }
     if (levels[2]) {
-      requests.push(this.http.get<HskCard[]>('assets/data/hsk3.json'));
+      requests.push(this.http.get<TocflCard[]>('assets/data/tocfl3.json'));
     }
 
     if (requests.length === 0) {
@@ -39,7 +39,7 @@ export class FlashcardService {
     );
   }
 
-  getDueCards(cards: HskCard[]): HskCard[] {
+  getDueCards(cards: TocflCard[]): TocflCard[] {
     const states = this.storage.getCardStates();
     const now = Date.now();
 
@@ -52,7 +52,7 @@ export class FlashcardService {
     });
   }
 
-  rateCard(card: HskCard, quality: number): void {
+  rateCard(card: TocflCard, quality: number): void {
     const states = this.storage.getCardStates();
     let state = states[card.id];
 

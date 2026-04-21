@@ -28,7 +28,7 @@
           [(ngModel)]="enabledLevels[0]"
           (change)="onLevelChange()"
         />
-        <span class="checkbox-text">HSK 1</span>
+        <span class="checkbox-text">TOCFL Novice 1</span>
       </label>
       <label class="checkbox-label">
         <input
@@ -36,7 +36,7 @@
           [(ngModel)]="enabledLevels[1]"
           (change)="onLevelChange()"
         />
-        <span class="checkbox-text">HSK 2</span>
+        <span class="checkbox-text">TOCFL Novice 2</span>
       </label>
       <label class="checkbox-label">
         <input
@@ -44,7 +44,7 @@
           [(ngModel)]="enabledLevels[2]"
           (change)="onLevelChange()"
         />
-        <span class="checkbox-text">HSK 3</span>
+        <span class="checkbox-text">TOCFL Level 1</span>
       </label>
     </div>
   </div>
@@ -58,7 +58,7 @@
   </div>
 
   <div *ngIf="!loading && enabledLevels[0] === false && enabledLevels[1] === false && enabledLevels[2] === false" class="empty-state">
-    <p>Please select at least one HSK level to begin.</p>
+    <p>Please select at least one TOCFL level to begin.</p>
   </div>
 
   <div *ngIf="!loading && isComplete" class="complete-state">
@@ -70,6 +70,7 @@
     <app-flashcard
       [card]="currentCard"
       [flipped]="isFlipped"
+      [skipAnimation]="skipCardAnimation"
       (flipCard)="onFlip()"
     ></app-flashcard>
 

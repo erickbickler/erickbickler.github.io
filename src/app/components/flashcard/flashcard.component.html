@@ -1,5 +1,5 @@
 <div class="card-container" *ngIf="card">
-  <div class="card" [class.flipped]="flipped" (click)="onCardClick()">
+  <div class="card" [class.flipped]="flipped" [class.no-animation]="skipAnimation" (click)="onCardClick()">
     <div class="front">
       {{ card.character }}
     </div>

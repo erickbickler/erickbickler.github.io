@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { HskCard } from '../../models/flashcard.model';
+import { TocflCard } from '../../models/flashcard.model';
 
 @Component({
   selector: 'app-flashcard',
@@ -7,8 +7,9 @@ import { HskCard } from '../../models/flashcard.model';
   styleUrls: ['./flashcard.component.css']
 })
 export class FlashcardComponent {
-  @Input() card: HskCard | null = null;
+  @Input() card: TocflCard | null = null;
   @Input() flipped = false;
+  @Input() skipAnimation = false;
   @Output() flipCard = new EventEmitter<void>();
 
   onCardClick(): void {

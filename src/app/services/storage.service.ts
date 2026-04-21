@@ -9,18 +9,18 @@ export class StorageService {
   constructor() { }
 
   getCardStates(): Record<string, CardState> {
-    const stored = localStorage.getItem('hsk_card_states');
+    const stored = localStorage.getItem('tocfl_card_states');
     return stored ? JSON.parse(stored) : {};
   }
 
   saveCardState(id: string, state: CardState): void {
     const states = this.getCardStates();
     states[id] = state;
-    localStorage.setItem('hsk_card_states', JSON.stringify(states));
+    localStorage.setItem('tocfl_card_states', JSON.stringify(states));
   }
 
   getEnabledLevels(): boolean[] {
-    const cookie = this.getCookie('hsk_levels');
+    const cookie = this.getCookie('tocfl_levels');
     if (cookie) {
       const parts = cookie.split(',').map(s => s === '1');
       return parts.length === 3 ? parts : [true, false, false];
@@ -30,7 +30,7 @@ export class StorageService {
 
   saveEnabledLevels(levels: boolean[]): void {
     const cookieValue = levels.map(b => b ? '1' : '0').join(',');
-    this.setCookie('hsk_levels', cookieValue, 30);
+    this.setCookie('tocfl_levels', cookieValue, 30);
   }
 
   private getCookie(name: string): string | null {

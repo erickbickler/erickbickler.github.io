@@ -17,6 +17,10 @@
   cursor: pointer;
 }
 
+.card.no-animation {
+  transition: none;
+}
+
 .card.flipped {
   transform: rotateY(180deg);
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HskCard, CardState } from '../../models/flashcard.model';
+import { TocflCard, CardState } from '../../models/flashcard.model';
 import { FlashcardService } from '../../services/flashcard.service';
 import { StorageService } from '../../services/storage.service';
 
@@ -9,10 +9,11 @@ import { StorageService } from '../../services/storage.service';
   styleUrls: ['./flashcards-page.component.css']
 })
 export class FlashcardsPageComponent implements OnInit {
-  currentCard: HskCard | null = null;
+  currentCard: TocflCard | null = null;
   isFlipped = false;
-  dueCards: HskCard[] = [];
-  allCards: HskCard[] = [];
+  skipCardAnimation = false;
+  dueCards: TocflCard[] = [];
+  allCards: TocflCard[] = [];
   enabledLevels: boolean[] = [true, false, false];
   cardIndex = 0;
   isComplete = false;
@@ -49,7 +50,7 @@ export class FlashcardsPageComponent implements OnInit {
   }
 
   onFlip(): void {
-    this.isFlipped = true;
+    this.isFlipped = !this.isFlipped;
   }
 
   onRate(quality: number): void {
@@ -58,12 +59,16 @@ export class FlashcardsPageComponent implements OnInit {
     this.flashcardService.rateCard(this.currentCard, quality);
     this.cardIndex++;
     this.isFlipped = false;
+    this.skipCardAnimation = true;
 
     if (this.cardIndex >= this.dueCards.length) {
       this.isComplete = true;
       this.currentCard = null;
     } else {
       this.currentCard = this.dueCards[this.cardIndex];
+      setTimeout(() => {
+        this.skipCardAnimation = false;
+      }, 50);
     }
   }
 
@@ -96,7 +101,7 @@ export class FlashcardsPageComponent implements OnInit {
     return this.allCards.filter(card => this.getCategoryForCard(card, states[card.id]) === category).length;
   }
 
-  private getCategoryForCard(card: HskCard, state?: CardState): 'mastered' | 'learning' | 'new' {
+  private getCategoryForCard(card: TocflCard, state?: CardState): 'mastered' | 'learning' | 'new' {
     if (!state) {
       return 'new';
     }
