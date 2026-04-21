@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TocflCard, CardState } from '../../models/flashcard.model';
+import { TocflCard, CardState } from '../../Models/flashcard.model';
 import { FlashcardService } from '../../services/flashcard.service';
 import { StorageService } from '../../services/storage.service';
 

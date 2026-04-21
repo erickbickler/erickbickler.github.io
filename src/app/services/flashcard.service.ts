@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, forkJoin, of } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { TocflCard, CardState } from '../models/flashcard.model';
+import { TocflCard, CardState } from '../Models/flashcard.model';
 import { Sm2Service } from './sm2.service';
 import { StorageService } from './storage.service';
 

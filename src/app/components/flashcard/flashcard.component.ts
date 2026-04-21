@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { TocflCard } from '../../models/flashcard.model';
+import { TocflCard } from '../../Models/flashcard.model';
 
 @Component({
   selector: 'app-flashcard',

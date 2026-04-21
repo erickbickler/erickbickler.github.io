@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CardState } from '../models/flashcard.model';
+import { CardState } from '../Models/flashcard.model';
 
 @Injectable({
   providedIn: 'root'
