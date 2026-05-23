@@ -1,0 +1,180 @@
+.norwegian-page {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.summary-section {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.summary-card {
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  padding: 20px;
+  min-width: 100px;
+  text-align: center;
+  border: 2px solid;
+}
+
+.summary-card.mastered {
+  border-color: #1a8a1a;
+}
+
+.summary-card.learning {
+  border-color: rgba(235, 255, 0, 0.96);
+}
+
+.summary-card.new {
+  border-color: #cc3300;
+}
+
+.summary-count {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.summary-card.mastered .summary-count {
+  color: #1a8a1a;
+}
+
+.summary-card.learning .summary-count {
+  color: rgba(235, 255, 0, 0.96);
+}
+
+.summary-card.new .summary-count {
+  color: #cc3300;
+}
+
+.summary-label {
+  font-size: 0.9rem;
+  color: #f0f0f0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.level-selector {
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(235, 255, 0, 0.2);
+}
+
+.level-selector h3 {
+  margin: 0 0 15px 0;
+  color: rgba(235, 255, 0, 0.96);
+  font-size: 1.2rem;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: rgba(235, 255, 0, 0.96);
+}
+
+.checkbox-text {
+  color: #f0f0f0;
+  font-size: 1rem;
+}
+
+.autoplay-toggle {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(235, 255, 0, 0.15);
+}
+
+.stats {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 1.1rem;
+  color: rgba(235, 255, 0, 0.96);
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgba(235, 255, 0, 0.96);
+  padding: 40px;
+}
+
+.empty-state,
+.complete-state {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.empty-state p,
+.complete-state p {
+  font-size: 1.1rem;
+  color: #f0f0f0;
+}
+
+.complete-state h2 {
+  font-size: 2rem;
+  color: rgba(235, 255, 0, 0.96);
+  margin-bottom: 20px;
+}
+
+.card-section {
+  max-width: 600px;
+  margin: 20px auto 0;
+}
+
+@media (max-width: 768px) {
+  .norwegian-page {
+    padding: 20px;
+  }
+
+  .summary-section {
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .summary-card {
+    padding: 15px;
+    min-width: 80px;
+  }
+
+  .summary-count {
+    font-size: 1.5rem;
+  }
+
+  .summary-label {
+    font-size: 0.8rem;
+  }
+
+  .level-selector {
+    padding: 15px;
+  }
+
+  .checkbox-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

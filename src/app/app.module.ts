@@ -22,6 +22,8 @@ import { ProjectDetailsPageComponent } from './pages/project-details-page/projec
 import { FlashcardsPageComponent } from './pages/flashcards-page/flashcards-page.component';
 import { FlashcardComponent } from './components/flashcard/flashcard.component';
 import { RatingButtonsComponent } from './components/rating-buttons/rating-buttons.component';
+import { NorwegianWordsPageComponent } from './pages/norwegian-words-page/norwegian-words-page.component';
+import { NorwegianFlashcardComponent } from './components/norwegian-flashcard/norwegian-flashcard.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { RatingButtonsComponent } from './components/rating-buttons/rating-butto
     ProjectDetailsPageComponent,
     FlashcardsPageComponent,
     FlashcardComponent,
-    RatingButtonsComponent
+    RatingButtonsComponent,
+    NorwegianWordsPageComponent,
+    NorwegianFlashcardComponent
   ],
   imports: [
     BrowserModule,

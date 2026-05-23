@@ -1,0 +1,14 @@
+<div class="card-container" *ngIf="card">
+  <div class="card" [class.flipped]="flipped" [class.no-animation]="skipAnimation" (click)="onCardClick()">
+    <div class="front">
+      <span class="article" *ngIf="card.article">{{ card.article }}</span>
+      <span class="word">{{ card.word }}</span>
+    </div>
+    <div class="back">
+      <div class="english">{{ card.english }}</div>
+    </div>
+  </div>
+</div>
+<div class="audio-controls" *ngIf="card">
+  <button class="audio-btn" (click)="onPlayAudio($event)" title="Listen to pronunciation">🔊</button>
+</div>

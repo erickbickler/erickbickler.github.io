@@ -12,6 +12,7 @@ export class AppComponent {
   constructor(private router: Router) {}
 
   get showNav(): boolean {
-    return !this.router.url.startsWith('/flashcards');
+    return !this.router.url.startsWith('/flashcards') &&
+           !this.router.url.startsWith('/norwegian');
   }
 }

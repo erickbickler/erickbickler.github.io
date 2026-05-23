@@ -1,0 +1,74 @@
+<div class="norwegian-page">
+
+  <div *ngIf="loading" class="loading">
+    Loading cards...
+  </div>
+
+  <div *ngIf="!loading && enabledLevels[0] === false && enabledLevels[1] === false && enabledLevels[2] === false" class="empty-state">
+    <p>Please select at least one level to begin.</p>
+  </div>
+
+  <div *ngIf="!loading && isComplete" class="complete-state">
+    <h2>All caught up! 🎉</h2>
+    <p>You've reviewed all your due cards. Come back later to continue learning.</p>
+  </div>
+
+  <div *ngIf="!loading && !isComplete && currentCard && (enabledLevels[0] || enabledLevels[1] || enabledLevels[2])" class="card-section">
+    <app-norwegian-flashcard
+      [card]="currentCard"
+      [flipped]="isFlipped"
+      [skipAnimation]="skipCardAnimation"
+      (flipCard)="onFlip()"
+    ></app-norwegian-flashcard>
+
+    <app-rating-buttons
+      *ngIf="isFlipped"
+      (rate)="onRate($event)"
+    ></app-rating-buttons>
+  </div>
+
+  <div class="stats">
+    <p>{{ deckStats }}</p>
+  </div>
+
+  <div *ngIf="!loading" class="summary-section">
+    <div class="summary-card mastered">
+      <div class="summary-count">{{ masteredCount }}</div>
+      <div class="summary-label">Mastered</div>
+    </div>
+    <div class="summary-card learning">
+      <div class="summary-count">{{ learningCount }}</div>
+      <div class="summary-label">Learning</div>
+    </div>
+    <div class="summary-card new">
+      <div class="summary-count">{{ newCount }}</div>
+      <div class="summary-label">New</div>
+    </div>
+  </div>
+
+  <div class="level-selector">
+    <h3>Learning Levels</h3>
+    <div class="checkbox-group">
+      <label class="checkbox-label">
+        <input type="checkbox" [(ngModel)]="enabledLevels[0]" (change)="onLevelChange()" />
+        <span class="checkbox-text">A1 – Beginner</span>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" [(ngModel)]="enabledLevels[1]" (change)="onLevelChange()" />
+        <span class="checkbox-text">A2 – Elementary</span>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" [(ngModel)]="enabledLevels[2]" (change)="onLevelChange()" />
+        <span class="checkbox-text">B1 – Intermediate</span>
+      </label>
+    </div>
+
+    <div class="autoplay-toggle">
+      <label class="checkbox-label">
+        <input type="checkbox" [(ngModel)]="autoPlay" (change)="onAutoPlayChange()" />
+        <span class="checkbox-text">🔊 Auto-play audio</span>
+      </label>
+    </div>
+  </div>
+
+</div>
