@@ -1,152 +1,1374 @@
 [
-  { "id": "1", "word": "Hei", "article": null, "english": "Hello", "level": 1 },
-  { "id": "2", "word": "God morgen", "article": null, "english": "Good morning", "level": 1 },
-  { "id": "3", "word": "God dag", "article": null, "english": "Good day", "level": 1 },
-  { "id": "4", "word": "God kveld", "article": null, "english": "Good evening", "level": 1 },
-  { "id": "5", "word": "Ha det", "article": null, "english": "Goodbye", "level": 1 },
-  { "id": "6", "word": "Ha det bra", "article": null, "english": "Goodbye (formal)", "level": 1 },
-  { "id": "7", "word": "Takk", "article": null, "english": "Thank you", "level": 1 },
-  { "id": "8", "word": "Tusen takk", "article": null, "english": "Thank you very much", "level": 1 },
-  { "id": "9", "word": "Vær så snill", "article": null, "english": "Please", "level": 1 },
-  { "id": "10", "word": "Unnskyld", "article": null, "english": "Excuse me / Sorry", "level": 1 },
-  { "id": "11", "word": "Beklager", "article": null, "english": "I'm sorry", "level": 1 },
-  { "id": "12", "word": "Ja", "article": null, "english": "Yes", "level": 1 },
-  { "id": "13", "word": "Nei", "article": null, "english": "No", "level": 1 },
-  { "id": "14", "word": "Hyggelig å møte deg", "article": null, "english": "Nice to meet you", "level": 1 },
-  { "id": "15", "word": "Hvordan går det?", "article": null, "english": "How are you?", "level": 1 },
-  { "id": "16", "word": "Det går bra, takk", "article": null, "english": "I'm fine, thank you", "level": 1 },
-  { "id": "17", "word": "Snakker du engelsk?", "article": null, "english": "Do you speak English?", "level": 1 },
-  { "id": "18", "word": "Jeg snakker ikke norsk", "article": null, "english": "I don't speak Norwegian", "level": 1 },
-  { "id": "19", "word": "Jeg forstår ikke", "article": null, "english": "I don't understand", "level": 1 },
-  { "id": "20", "word": "Kan du hjelpe meg?", "article": null, "english": "Can you help me?", "level": 1 },
-  { "id": "21", "word": "God natt", "article": null, "english": "Good night", "level": 1 },
-  { "id": "22", "word": "Velkommen", "article": null, "english": "Welcome", "level": 1 },
-  { "id": "23", "word": "Skål", "article": null, "english": "Cheers", "level": 1 },
-  { "id": "24", "word": "God appetitt", "article": null, "english": "Enjoy your meal", "level": 1 },
-  { "id": "25", "word": "Ha en fin dag", "article": null, "english": "Have a nice day", "level": 1 },
-  { "id": "26", "word": "Familie", "article": "en", "english": "Family", "level": 1 },
-  { "id": "27", "word": "Mor", "article": null, "english": "Mother", "level": 1 },
-  { "id": "28", "word": "Far", "article": null, "english": "Father", "level": 1 },
-  { "id": "29", "word": "Foreldre", "article": null, "english": "Parents", "level": 1 },
-  { "id": "30", "word": "Søster", "article": null, "english": "Sister", "level": 1 },
-  { "id": "31", "word": "Bror", "article": null, "english": "Brother", "level": 1 },
-  { "id": "32", "word": "Søsken", "article": null, "english": "Siblings", "level": 1 },
-  { "id": "33", "word": "Barn", "article": "et", "english": "Child / Children", "level": 1 },
-  { "id": "34", "word": "Datter", "article": null, "english": "Daughter", "level": 1 },
-  { "id": "35", "word": "Sønn", "article": null, "english": "Son", "level": 1 },
-  { "id": "36", "word": "Bestemor", "article": null, "english": "Grandmother", "level": 1 },
-  { "id": "37", "word": "Bestefar", "article": null, "english": "Grandfather", "level": 1 },
-  { "id": "38", "word": "Besteforeldre", "article": null, "english": "Grandparents", "level": 1 },
-  { "id": "39", "word": "Tante", "article": null, "english": "Aunt", "level": 1 },
-  { "id": "40", "word": "Onkel", "article": null, "english": "Uncle", "level": 1 },
-  { "id": "41", "word": "Fetter", "article": null, "english": "Male cousin", "level": 1 },
-  { "id": "42", "word": "Kusine", "article": null, "english": "Female cousin", "level": 1 },
-  { "id": "43", "word": "Kone", "article": null, "english": "Wife", "level": 1 },
-  { "id": "44", "word": "Mann", "article": null, "english": "Husband / Man", "level": 1 },
-  { "id": "45", "word": "Kvinne", "article": null, "english": "Woman", "level": 1 },
-  { "id": "46", "word": "Venn", "article": null, "english": "Friend (male)", "level": 1 },
-  { "id": "47", "word": "Venninne", "article": null, "english": "Friend (female)", "level": 1 },
-  { "id": "48", "word": "Kjæreste", "article": null, "english": "Boyfriend / Girlfriend", "level": 1 },
-  { "id": "49", "word": "Nabo", "article": null, "english": "Neighbor", "level": 1 },
-  { "id": "50", "word": "Kollega", "article": null, "english": "Colleague", "level": 1 },
-  { "id": "51", "word": "Hvor er…?", "article": null, "english": "Where is…?", "level": 2 },
-  { "id": "52", "word": "Jeg vil gjerne til…", "article": null, "english": "I would like to go to…", "level": 2 },
-  { "id": "53", "word": "Hvor mye koster billetten?", "article": null, "english": "How much does the ticket cost?", "level": 2 },
-  { "id": "54", "word": "En billett, takk", "article": null, "english": "One ticket, please", "level": 2 },
-  { "id": "55", "word": "Tur-retur", "article": null, "english": "Round trip", "level": 2 },
-  { "id": "56", "word": "Enkeltbillett", "article": null, "english": "One-way ticket", "level": 2 },
-  { "id": "57", "word": "Tog", "article": "et", "english": "Train", "level": 2 },
-  { "id": "58", "word": "Buss", "article": "en", "english": "Bus", "level": 2 },
-  { "id": "59", "word": "T-bane", "article": "en", "english": "Subway / Metro", "level": 2 },
-  { "id": "60", "word": "Trikk", "article": "en", "english": "Tram", "level": 2 },
-  { "id": "61", "word": "Taxi", "article": "en", "english": "Taxi", "level": 2 },
-  { "id": "62", "word": "Flyplass", "article": "en", "english": "Airport", "level": 2 },
-  { "id": "63", "word": "Togstasjon", "article": "en", "english": "Train station", "level": 2 },
-  { "id": "64", "word": "Busstasjon", "article": "en", "english": "Bus station", "level": 2 },
-  { "id": "65", "word": "Hva er adressen?", "article": null, "english": "What is the address?", "level": 2 },
-  { "id": "66", "word": "Er det langt å gå?", "article": null, "english": "Is it far to walk?", "level": 2 },
-  { "id": "67", "word": "Kan du vise meg på kartet?", "article": null, "english": "Can you show me on the map?", "level": 2 },
-  { "id": "68", "word": "Når går neste buss?", "article": null, "english": "When does the next bus leave?", "level": 2 },
-  { "id": "69", "word": "Hvor lang tid tar det?", "article": null, "english": "How long does it take?", "level": 2 },
-  { "id": "70", "word": "Jeg har mistet veien", "article": null, "english": "I am lost", "level": 2 },
-  { "id": "71", "word": "Til høyre", "article": null, "english": "To the right", "level": 2 },
-  { "id": "72", "word": "Til venstre", "article": null, "english": "To the left", "level": 2 },
-  { "id": "73", "word": "Rett fram", "article": null, "english": "Straight ahead", "level": 2 },
-  { "id": "74", "word": "Jeg trenger å leie en bil", "article": null, "english": "I need to rent a car", "level": 2 },
-  { "id": "75", "word": "Kan jeg få et kart?", "article": null, "english": "Can I have a map?", "level": 2 },
-  { "id": "76", "word": "En / ett", "article": null, "english": "One", "level": 1 },
-  { "id": "77", "word": "To", "article": null, "english": "Two", "level": 1 },
-  { "id": "78", "word": "Tre", "article": null, "english": "Three", "level": 1 },
-  { "id": "79", "word": "Fire", "article": null, "english": "Four", "level": 1 },
-  { "id": "80", "word": "Fem", "article": null, "english": "Five", "level": 1 },
-  { "id": "81", "word": "Seks", "article": null, "english": "Six", "level": 1 },
-  { "id": "82", "word": "Sju / syv", "article": null, "english": "Seven", "level": 1 },
-  { "id": "83", "word": "Åtte", "article": null, "english": "Eight", "level": 1 },
-  { "id": "84", "word": "Ni", "article": null, "english": "Nine", "level": 1 },
-  { "id": "85", "word": "Ti", "article": null, "english": "Ten", "level": 1 },
-  { "id": "86", "word": "Elleve", "article": null, "english": "Eleven", "level": 1 },
-  { "id": "87", "word": "Tolv", "article": null, "english": "Twelve", "level": 1 },
-  { "id": "88", "word": "Tretten", "article": null, "english": "Thirteen", "level": 1 },
-  { "id": "89", "word": "Fjorten", "article": null, "english": "Fourteen", "level": 1 },
-  { "id": "90", "word": "Femten", "article": null, "english": "Fifteen", "level": 1 },
-  { "id": "91", "word": "Seksten", "article": null, "english": "Sixteen", "level": 1 },
-  { "id": "92", "word": "Sytten", "article": null, "english": "Seventeen", "level": 1 },
-  { "id": "93", "word": "Atten", "article": null, "english": "Eighteen", "level": 1 },
-  { "id": "94", "word": "Nitten", "article": null, "english": "Nineteen", "level": 1 },
-  { "id": "95", "word": "Tjue", "article": null, "english": "Twenty", "level": 1 },
-  { "id": "96", "word": "Klokka", "article": "en", "english": "Clock / Time", "level": 1 },
-  { "id": "97", "word": "Minutt", "article": "et", "english": "Minute", "level": 1 },
-  { "id": "98", "word": "Time", "article": "en", "english": "Hour", "level": 1 },
-  { "id": "99", "word": "I dag", "article": null, "english": "Today", "level": 1 },
-  { "id": "100", "word": "I morgen", "article": null, "english": "Tomorrow", "level": 1 },
-  { "id": "101", "word": "Hus", "article": "et", "english": "House", "level": 2 },
-  { "id": "102", "word": "Leilighet", "article": "en", "english": "Apartment", "level": 2 },
-  { "id": "103", "word": "Kjøkken", "article": "et", "english": "Kitchen", "level": 2 },
-  { "id": "104", "word": "Stue", "article": "en", "english": "Living room", "level": 2 },
-  { "id": "105", "word": "Soverom", "article": "et", "english": "Bedroom", "level": 2 },
-  { "id": "106", "word": "Bad", "article": "et", "english": "Bathroom", "level": 2 },
-  { "id": "107", "word": "Dør", "article": "en", "english": "Door", "level": 2 },
-  { "id": "108", "word": "Vindu", "article": "et", "english": "Window", "level": 2 },
-  { "id": "109", "word": "Stol", "article": "en", "english": "Chair", "level": 2 },
-  { "id": "110", "word": "Bord", "article": "et", "english": "Table", "level": 2 },
-  { "id": "111", "word": "Seng", "article": "en", "english": "Bed", "level": 2 },
-  { "id": "112", "word": "Butikk", "article": "en", "english": "Store / Shop", "level": 2 },
-  { "id": "113", "word": "Supermarked", "article": "et", "english": "Supermarket", "level": 2 },
-  { "id": "114", "word": "Kafé", "article": "en", "english": "Café", "level": 2 },
-  { "id": "115", "word": "Restaurant", "article": "en", "english": "Restaurant", "level": 2 },
-  { "id": "116", "word": "Bank", "article": "en", "english": "Bank", "level": 2 },
-  { "id": "117", "word": "Apotek", "article": "et", "english": "Pharmacy", "level": 2 },
-  { "id": "118", "word": "Sykehus", "article": "et", "english": "Hospital", "level": 2 },
-  { "id": "119", "word": "Skole", "article": "en", "english": "School", "level": 2 },
-  { "id": "120", "word": "Bibliotek", "article": "et", "english": "Library", "level": 2 },
-  { "id": "121", "word": "Park", "article": "en", "english": "Park", "level": 2 },
-  { "id": "122", "word": "Strand", "article": "en", "english": "Beach", "level": 2 },
-  { "id": "123", "word": "Fjell", "article": "et", "english": "Mountain", "level": 2 },
-  { "id": "124", "word": "Skog", "article": "en", "english": "Forest", "level": 2 },
-  { "id": "125", "word": "Kirke", "article": "en", "english": "Church", "level": 2 },
-  { "id": "126", "word": "Å være", "article": null, "english": "To be", "level": 2 },
-  { "id": "127", "word": "Å ha", "article": null, "english": "To have", "level": 2 },
-  { "id": "128", "word": "Å gjøre", "article": null, "english": "To do", "level": 2 },
-  { "id": "129", "word": "Å gå", "article": null, "english": "To go / Walk", "level": 2 },
-  { "id": "130", "word": "Å komme", "article": null, "english": "To come", "level": 2 },
-  { "id": "131", "word": "Å se", "article": null, "english": "To see", "level": 2 },
-  { "id": "132", "word": "Å høre", "article": null, "english": "To hear", "level": 2 },
-  { "id": "133", "word": "Å snakke", "article": null, "english": "To speak / Talk", "level": 2 },
-  { "id": "134", "word": "Å spise", "article": null, "english": "To eat", "level": 2 },
-  { "id": "135", "word": "Å drikke", "article": null, "english": "To drink", "level": 2 },
-  { "id": "136", "word": "Å sove", "article": null, "english": "To sleep", "level": 2 },
-  { "id": "137", "word": "Å våkne", "article": null, "english": "To wake up", "level": 2 },
-  { "id": "138", "word": "Å lese", "article": null, "english": "To read", "level": 2 },
-  { "id": "139", "word": "Å skrive", "article": null, "english": "To write", "level": 2 },
-  { "id": "140", "word": "Å lære", "article": null, "english": "To learn", "level": 2 },
-  { "id": "141", "word": "Å jobbe", "article": null, "english": "To work", "level": 2 },
-  { "id": "142", "word": "Å kjøpe", "article": null, "english": "To buy", "level": 2 },
-  { "id": "143", "word": "Å selge", "article": null, "english": "To sell", "level": 2 },
-  { "id": "144", "word": "Å like", "article": null, "english": "To like", "level": 2 },
-  { "id": "145", "word": "Å elske", "article": null, "english": "To love", "level": 2 },
-  { "id": "146", "word": "Å hjelpe", "article": null, "english": "To help", "level": 2 },
-  { "id": "147", "word": "Å finne", "article": null, "english": "To find", "level": 2 },
-  { "id": "148", "word": "Å bo", "article": null, "english": "To live (reside)", "level": 2 },
-  { "id": "149", "word": "Å reise", "article": null, "english": "To travel", "level": 2 },
-  { "id": "150", "word": "Å vente", "article": null, "english": "To wait", "level": 2 }
+  {
+    "id": "1",
+    "word": "Hei",
+    "article": null,
+    "english": "Hello",
+    "level": 1
+  },
+  {
+    "id": "2",
+    "word": "God morgen",
+    "article": null,
+    "english": "Good morning",
+    "level": 1
+  },
+  {
+    "id": "3",
+    "word": "God dag",
+    "article": null,
+    "english": "Good day",
+    "level": 1
+  },
+  {
+    "id": "4",
+    "word": "God kveld",
+    "article": null,
+    "english": "Good evening",
+    "level": 1
+  },
+  {
+    "id": "5",
+    "word": "Ha det",
+    "article": null,
+    "english": "Goodbye",
+    "level": 1
+  },
+  {
+    "id": "6",
+    "word": "Ha det bra",
+    "article": null,
+    "english": "Goodbye (formal)",
+    "level": 1
+  },
+  {
+    "id": "7",
+    "word": "Takk",
+    "article": null,
+    "english": "Thank you",
+    "level": 1
+  },
+  {
+    "id": "8",
+    "word": "Tusen takk",
+    "article": null,
+    "english": "Thank you very much",
+    "level": 1
+  },
+  {
+    "id": "9",
+    "word": "Vær så snill",
+    "article": null,
+    "english": "Please",
+    "level": 1
+  },
+  {
+    "id": "10",
+    "word": "Unnskyld",
+    "article": null,
+    "english": "Excuse me / Sorry",
+    "level": 1
+  },
+  {
+    "id": "11",
+    "word": "Beklager",
+    "article": null,
+    "english": "I'm sorry",
+    "level": 1
+  },
+  {
+    "id": "12",
+    "word": "Ja",
+    "article": null,
+    "english": "Yes",
+    "level": 1
+  },
+  {
+    "id": "13",
+    "word": "Nei",
+    "article": null,
+    "english": "No",
+    "level": 1
+  },
+  {
+    "id": "14",
+    "word": "Hyggelig å møte deg",
+    "article": null,
+    "english": "Nice to meet you",
+    "level": 1
+  },
+  {
+    "id": "15",
+    "word": "Hvordan går det?",
+    "article": null,
+    "english": "How are you?",
+    "level": 1
+  },
+  {
+    "id": "16",
+    "word": "Det går bra, takk",
+    "article": null,
+    "english": "I'm fine, thank you",
+    "level": 1
+  },
+  {
+    "id": "17",
+    "word": "Snakker du engelsk?",
+    "article": null,
+    "english": "Do you speak English?",
+    "level": 1
+  },
+  {
+    "id": "18",
+    "word": "Jeg snakker ikke norsk",
+    "article": null,
+    "english": "I don't speak Norwegian",
+    "level": 1
+  },
+  {
+    "id": "19",
+    "word": "Jeg forstår ikke",
+    "article": null,
+    "english": "I don't understand",
+    "level": 1
+  },
+  {
+    "id": "20",
+    "word": "Kan du hjelpe meg?",
+    "article": null,
+    "english": "Can you help me?",
+    "level": 1
+  },
+  {
+    "id": "21",
+    "word": "God natt",
+    "article": null,
+    "english": "Good night",
+    "level": 1
+  },
+  {
+    "id": "22",
+    "word": "Velkommen",
+    "article": null,
+    "english": "Welcome",
+    "level": 1
+  },
+  {
+    "id": "23",
+    "word": "Skål",
+    "article": null,
+    "english": "Cheers",
+    "level": 1
+  },
+  {
+    "id": "24",
+    "word": "God appetitt",
+    "article": null,
+    "english": "Enjoy your meal",
+    "level": 1
+  },
+  {
+    "id": "25",
+    "word": "Ha en fin dag",
+    "article": null,
+    "english": "Have a nice day",
+    "level": 1
+  },
+  {
+    "id": "26",
+    "word": "Familie",
+    "article": "en",
+    "english": "Family",
+    "level": 1
+  },
+  {
+    "id": "27",
+    "word": "Mor",
+    "article": null,
+    "english": "Mother",
+    "level": 1
+  },
+  {
+    "id": "28",
+    "word": "Far",
+    "article": null,
+    "english": "Father",
+    "level": 1
+  },
+  {
+    "id": "29",
+    "word": "Foreldre",
+    "article": null,
+    "english": "Parents",
+    "level": 1
+  },
+  {
+    "id": "30",
+    "word": "Søster",
+    "article": null,
+    "english": "Sister",
+    "level": 1
+  },
+  {
+    "id": "31",
+    "word": "Bror",
+    "article": null,
+    "english": "Brother",
+    "level": 1
+  },
+  {
+    "id": "32",
+    "word": "Søsken",
+    "article": null,
+    "english": "Siblings",
+    "level": 1
+  },
+  {
+    "id": "33",
+    "word": "Barn",
+    "article": "et",
+    "english": "Child / Children",
+    "level": 1
+  },
+  {
+    "id": "34",
+    "word": "Datter",
+    "article": null,
+    "english": "Daughter",
+    "level": 1
+  },
+  {
+    "id": "35",
+    "word": "Sønn",
+    "article": null,
+    "english": "Son",
+    "level": 1
+  },
+  {
+    "id": "36",
+    "word": "Bestemor",
+    "article": null,
+    "english": "Grandmother",
+    "level": 1
+  },
+  {
+    "id": "37",
+    "word": "Bestefar",
+    "article": null,
+    "english": "Grandfather",
+    "level": 1
+  },
+  {
+    "id": "38",
+    "word": "Besteforeldre",
+    "article": null,
+    "english": "Grandparents",
+    "level": 1
+  },
+  {
+    "id": "39",
+    "word": "Tante",
+    "article": null,
+    "english": "Aunt",
+    "level": 1
+  },
+  {
+    "id": "40",
+    "word": "Onkel",
+    "article": null,
+    "english": "Uncle",
+    "level": 1
+  },
+  {
+    "id": "41",
+    "word": "Fetter",
+    "article": null,
+    "english": "Male cousin",
+    "level": 1
+  },
+  {
+    "id": "42",
+    "word": "Kusine",
+    "article": null,
+    "english": "Female cousin",
+    "level": 1
+  },
+  {
+    "id": "43",
+    "word": "Kone",
+    "article": null,
+    "english": "Wife",
+    "level": 1
+  },
+  {
+    "id": "44",
+    "word": "Mann",
+    "article": null,
+    "english": "Husband / Man",
+    "level": 1
+  },
+  {
+    "id": "45",
+    "word": "Kvinne",
+    "article": null,
+    "english": "Woman",
+    "level": 1
+  },
+  {
+    "id": "46",
+    "word": "Venn",
+    "article": null,
+    "english": "Friend (male)",
+    "level": 1
+  },
+  {
+    "id": "47",
+    "word": "Venninne",
+    "article": null,
+    "english": "Friend (female)",
+    "level": 1
+  },
+  {
+    "id": "48",
+    "word": "Kjæreste",
+    "article": null,
+    "english": "Boyfriend / Girlfriend",
+    "level": 1
+  },
+  {
+    "id": "49",
+    "word": "Nabo",
+    "article": null,
+    "english": "Neighbor",
+    "level": 1
+  },
+  {
+    "id": "50",
+    "word": "Kollega",
+    "article": null,
+    "english": "Colleague",
+    "level": 1
+  },
+  {
+    "id": "51",
+    "word": "Hvor er…?",
+    "article": null,
+    "english": "Where is…?",
+    "level": 2
+  },
+  {
+    "id": "52",
+    "word": "Jeg vil gjerne til…",
+    "article": null,
+    "english": "I would like to go to…",
+    "level": 2
+  },
+  {
+    "id": "53",
+    "word": "Hvor mye koster billetten?",
+    "article": null,
+    "english": "How much does the ticket cost?",
+    "level": 2
+  },
+  {
+    "id": "54",
+    "word": "En billett, takk",
+    "article": null,
+    "english": "One ticket, please",
+    "level": 2
+  },
+  {
+    "id": "55",
+    "word": "Tur-retur",
+    "article": null,
+    "english": "Round trip",
+    "level": 2
+  },
+  {
+    "id": "56",
+    "word": "Enkeltbillett",
+    "article": null,
+    "english": "One-way ticket",
+    "level": 2
+  },
+  {
+    "id": "57",
+    "word": "Tog",
+    "article": "et",
+    "english": "Train",
+    "level": 2
+  },
+  {
+    "id": "58",
+    "word": "Buss",
+    "article": "en",
+    "english": "Bus",
+    "level": 2
+  },
+  {
+    "id": "59",
+    "word": "T-bane",
+    "article": "en",
+    "english": "Subway / Metro",
+    "level": 2
+  },
+  {
+    "id": "60",
+    "word": "Trikk",
+    "article": "en",
+    "english": "Tram",
+    "level": 2
+  },
+  {
+    "id": "61",
+    "word": "Taxi",
+    "article": "en",
+    "english": "Taxi",
+    "level": 2
+  },
+  {
+    "id": "62",
+    "word": "Flyplass",
+    "article": "en",
+    "english": "Airport",
+    "level": 2
+  },
+  {
+    "id": "63",
+    "word": "Togstasjon",
+    "article": "en",
+    "english": "Train station",
+    "level": 2
+  },
+  {
+    "id": "64",
+    "word": "Busstasjon",
+    "article": "en",
+    "english": "Bus station",
+    "level": 2
+  },
+  {
+    "id": "65",
+    "word": "Hva er adressen?",
+    "article": null,
+    "english": "What is the address?",
+    "level": 2
+  },
+  {
+    "id": "66",
+    "word": "Er det langt å gå?",
+    "article": null,
+    "english": "Is it far to walk?",
+    "level": 2
+  },
+  {
+    "id": "67",
+    "word": "Kan du vise meg på kartet?",
+    "article": null,
+    "english": "Can you show me on the map?",
+    "level": 2
+  },
+  {
+    "id": "68",
+    "word": "Når går neste buss?",
+    "article": null,
+    "english": "When does the next bus leave?",
+    "level": 2
+  },
+  {
+    "id": "69",
+    "word": "Hvor lang tid tar det?",
+    "article": null,
+    "english": "How long does it take?",
+    "level": 2
+  },
+  {
+    "id": "70",
+    "word": "Jeg har mistet veien",
+    "article": null,
+    "english": "I am lost",
+    "level": 2
+  },
+  {
+    "id": "71",
+    "word": "Til høyre",
+    "article": null,
+    "english": "To the right",
+    "level": 2
+  },
+  {
+    "id": "72",
+    "word": "Til venstre",
+    "article": null,
+    "english": "To the left",
+    "level": 2
+  },
+  {
+    "id": "73",
+    "word": "Rett fram",
+    "article": null,
+    "english": "Straight ahead",
+    "level": 2
+  },
+  {
+    "id": "74",
+    "word": "Jeg trenger å leie en bil",
+    "article": null,
+    "english": "I need to rent a car",
+    "level": 2
+  },
+  {
+    "id": "75",
+    "word": "Kan jeg få et kart?",
+    "article": null,
+    "english": "Can I have a map?",
+    "level": 2
+  },
+  {
+    "id": "76",
+    "word": "En / ett",
+    "article": null,
+    "english": "One",
+    "level": 1
+  },
+  {
+    "id": "77",
+    "word": "To",
+    "article": null,
+    "english": "Two",
+    "level": 1
+  },
+  {
+    "id": "78",
+    "word": "Tre",
+    "article": null,
+    "english": "Three",
+    "level": 1
+  },
+  {
+    "id": "79",
+    "word": "Fire",
+    "article": null,
+    "english": "Four",
+    "level": 1
+  },
+  {
+    "id": "80",
+    "word": "Fem",
+    "article": null,
+    "english": "Five",
+    "level": 1
+  },
+  {
+    "id": "81",
+    "word": "Seks",
+    "article": null,
+    "english": "Six",
+    "level": 1
+  },
+  {
+    "id": "82",
+    "word": "Sju / syv",
+    "article": null,
+    "english": "Seven",
+    "level": 1
+  },
+  {
+    "id": "83",
+    "word": "Åtte",
+    "article": null,
+    "english": "Eight",
+    "level": 1
+  },
+  {
+    "id": "84",
+    "word": "Ni",
+    "article": null,
+    "english": "Nine",
+    "level": 1
+  },
+  {
+    "id": "85",
+    "word": "Ti",
+    "article": null,
+    "english": "Ten",
+    "level": 1
+  },
+  {
+    "id": "86",
+    "word": "Elleve",
+    "article": null,
+    "english": "Eleven",
+    "level": 1
+  },
+  {
+    "id": "87",
+    "word": "Tolv",
+    "article": null,
+    "english": "Twelve",
+    "level": 1
+  },
+  {
+    "id": "88",
+    "word": "Tretten",
+    "article": null,
+    "english": "Thirteen",
+    "level": 1
+  },
+  {
+    "id": "89",
+    "word": "Fjorten",
+    "article": null,
+    "english": "Fourteen",
+    "level": 1
+  },
+  {
+    "id": "90",
+    "word": "Femten",
+    "article": null,
+    "english": "Fifteen",
+    "level": 1
+  },
+  {
+    "id": "91",
+    "word": "Seksten",
+    "article": null,
+    "english": "Sixteen",
+    "level": 1
+  },
+  {
+    "id": "92",
+    "word": "Sytten",
+    "article": null,
+    "english": "Seventeen",
+    "level": 1
+  },
+  {
+    "id": "93",
+    "word": "Atten",
+    "article": null,
+    "english": "Eighteen",
+    "level": 1
+  },
+  {
+    "id": "94",
+    "word": "Nitten",
+    "article": null,
+    "english": "Nineteen",
+    "level": 1
+  },
+  {
+    "id": "95",
+    "word": "Tjue",
+    "article": null,
+    "english": "Twenty",
+    "level": 1
+  },
+  {
+    "id": "96",
+    "word": "Klokka",
+    "article": "en",
+    "english": "Clock / Time",
+    "level": 1
+  },
+  {
+    "id": "97",
+    "word": "Minutt",
+    "article": "et",
+    "english": "Minute",
+    "level": 1
+  },
+  {
+    "id": "98",
+    "word": "Time",
+    "article": "en",
+    "english": "Hour",
+    "level": 1
+  },
+  {
+    "id": "99",
+    "word": "I dag",
+    "article": null,
+    "english": "Today",
+    "level": 1
+  },
+  {
+    "id": "100",
+    "word": "I morgen",
+    "article": null,
+    "english": "Tomorrow",
+    "level": 1
+  },
+  {
+    "id": "101",
+    "word": "Hus",
+    "article": "et",
+    "english": "House",
+    "level": 2
+  },
+  {
+    "id": "102",
+    "word": "Leilighet",
+    "article": "en",
+    "english": "Apartment",
+    "level": 2
+  },
+  {
+    "id": "103",
+    "word": "Kjøkken",
+    "article": "et",
+    "english": "Kitchen",
+    "level": 2
+  },
+  {
+    "id": "104",
+    "word": "Stue",
+    "article": "en",
+    "english": "Living room",
+    "level": 2
+  },
+  {
+    "id": "105",
+    "word": "Soverom",
+    "article": "et",
+    "english": "Bedroom",
+    "level": 2
+  },
+  {
+    "id": "106",
+    "word": "Bad",
+    "article": "et",
+    "english": "Bathroom",
+    "level": 2
+  },
+  {
+    "id": "107",
+    "word": "Dør",
+    "article": "en",
+    "english": "Door",
+    "level": 2
+  },
+  {
+    "id": "108",
+    "word": "Vindu",
+    "article": "et",
+    "english": "Window",
+    "level": 2
+  },
+  {
+    "id": "109",
+    "word": "Stol",
+    "article": "en",
+    "english": "Chair",
+    "level": 2
+  },
+  {
+    "id": "110",
+    "word": "Bord",
+    "article": "et",
+    "english": "Table",
+    "level": 2
+  },
+  {
+    "id": "111",
+    "word": "Seng",
+    "article": "en",
+    "english": "Bed",
+    "level": 2
+  },
+  {
+    "id": "112",
+    "word": "Butikk",
+    "article": "en",
+    "english": "Store / Shop",
+    "level": 2
+  },
+  {
+    "id": "113",
+    "word": "Supermarked",
+    "article": "et",
+    "english": "Supermarket",
+    "level": 2
+  },
+  {
+    "id": "114",
+    "word": "Kafé",
+    "article": "en",
+    "english": "Café",
+    "level": 2
+  },
+  {
+    "id": "115",
+    "word": "Restaurant",
+    "article": "en",
+    "english": "Restaurant",
+    "level": 2
+  },
+  {
+    "id": "116",
+    "word": "Bank",
+    "article": "en",
+    "english": "Bank",
+    "level": 2
+  },
+  {
+    "id": "117",
+    "word": "Apotek",
+    "article": "et",
+    "english": "Pharmacy",
+    "level": 2
+  },
+  {
+    "id": "118",
+    "word": "Sykehus",
+    "article": "et",
+    "english": "Hospital",
+    "level": 2
+  },
+  {
+    "id": "119",
+    "word": "Skole",
+    "article": "en",
+    "english": "School",
+    "level": 2
+  },
+  {
+    "id": "120",
+    "word": "Bibliotek",
+    "article": "et",
+    "english": "Library",
+    "level": 2
+  },
+  {
+    "id": "121",
+    "word": "Park",
+    "article": "en",
+    "english": "Park",
+    "level": 2
+  },
+  {
+    "id": "122",
+    "word": "Strand",
+    "article": "en",
+    "english": "Beach",
+    "level": 2
+  },
+  {
+    "id": "123",
+    "word": "Fjell",
+    "article": "et",
+    "english": "Mountain",
+    "level": 2
+  },
+  {
+    "id": "124",
+    "word": "Skog",
+    "article": "en",
+    "english": "Forest",
+    "level": 2
+  },
+  {
+    "id": "125",
+    "word": "Kirke",
+    "article": "en",
+    "english": "Church",
+    "level": 2
+  },
+  {
+    "id": "126",
+    "word": "Å være",
+    "article": null,
+    "english": "To be",
+    "level": 2
+  },
+  {
+    "id": "127",
+    "word": "Å ha",
+    "article": null,
+    "english": "To have",
+    "level": 2
+  },
+  {
+    "id": "128",
+    "word": "Å gjøre",
+    "article": null,
+    "english": "To do",
+    "level": 2
+  },
+  {
+    "id": "129",
+    "word": "Å gå",
+    "article": null,
+    "english": "To go / Walk",
+    "level": 2
+  },
+  {
+    "id": "130",
+    "word": "Å komme",
+    "article": null,
+    "english": "To come",
+    "level": 2
+  },
+  {
+    "id": "131",
+    "word": "Å se",
+    "article": null,
+    "english": "To see",
+    "level": 2
+  },
+  {
+    "id": "132",
+    "word": "Å høre",
+    "article": null,
+    "english": "To hear",
+    "level": 2
+  },
+  {
+    "id": "133",
+    "word": "Å snakke",
+    "article": null,
+    "english": "To speak / Talk",
+    "level": 2
+  },
+  {
+    "id": "134",
+    "word": "Å spise",
+    "article": null,
+    "english": "To eat",
+    "level": 2
+  },
+  {
+    "id": "135",
+    "word": "Å drikke",
+    "article": null,
+    "english": "To drink",
+    "level": 2
+  },
+  {
+    "id": "136",
+    "word": "Å sove",
+    "article": null,
+    "english": "To sleep",
+    "level": 2
+  },
+  {
+    "id": "137",
+    "word": "Å våkne",
+    "article": null,
+    "english": "To wake up",
+    "level": 2
+  },
+  {
+    "id": "138",
+    "word": "Å lese",
+    "article": null,
+    "english": "To read",
+    "level": 2
+  },
+  {
+    "id": "139",
+    "word": "Å skrive",
+    "article": null,
+    "english": "To write",
+    "level": 2
+  },
+  {
+    "id": "140",
+    "word": "Å lære",
+    "article": null,
+    "english": "To learn",
+    "level": 2
+  },
+  {
+    "id": "141",
+    "word": "Å jobbe",
+    "article": null,
+    "english": "To work",
+    "level": 2
+  },
+  {
+    "id": "142",
+    "word": "Å kjøpe",
+    "article": null,
+    "english": "To buy",
+    "level": 2
+  },
+  {
+    "id": "143",
+    "word": "Å selge",
+    "article": null,
+    "english": "To sell",
+    "level": 2
+  },
+  {
+    "id": "144",
+    "word": "Å like",
+    "article": null,
+    "english": "To like",
+    "level": 2
+  },
+  {
+    "id": "145",
+    "word": "Å elske",
+    "article": null,
+    "english": "To love",
+    "level": 2
+  },
+  {
+    "id": "146",
+    "word": "Å hjelpe",
+    "article": null,
+    "english": "To help",
+    "level": 2
+  },
+  {
+    "id": "147",
+    "word": "Å finne",
+    "article": null,
+    "english": "To find",
+    "level": 2
+  },
+  {
+    "id": "148",
+    "word": "Å bo",
+    "article": null,
+    "english": "To live (reside)",
+    "level": 2
+  },
+  {
+    "id": "149",
+    "word": "Å reise",
+    "article": null,
+    "english": "To travel",
+    "level": 2
+  },
+  {
+    "id": "150",
+    "word": "Å vente",
+    "article": null,
+    "english": "To wait",
+    "level": 2
+  },
+  {
+    "id": "151",
+    "word": "God ettermiddag",
+    "article": null,
+    "english": "Good afternoon",
+    "level": 1
+  },
+  {
+    "id": "152",
+    "word": "Hadet",
+    "article": null,
+    "english": "Goodbye",
+    "level": 1
+  },
+  {
+    "id": "153",
+    "word": "Bra, med deg?",
+    "article": null,
+    "english": "I'm well, and you?",
+    "level": 1
+  },
+  {
+    "id": "154",
+    "word": "Bra, takk",
+    "article": null,
+    "english": "Good, thanks",
+    "level": 1
+  },
+  {
+    "id": "155",
+    "word": "Vær så god",
+    "article": null,
+    "english": "You're welcome",
+    "level": 1
+  },
+  {
+    "id": "156",
+    "word": "Unnskyld meg",
+    "article": null,
+    "english": "Excuse me (getting attention)",
+    "level": 1
+  },
+  {
+    "id": "157",
+    "word": "Hæ?",
+    "article": null,
+    "english": "Excuse me (pardon?)",
+    "level": 1
+  },
+  {
+    "id": "158",
+    "word": "Hvor mye koster..?",
+    "article": null,
+    "english": "How much is...?",
+    "level": 1
+  },
+  {
+    "id": "159",
+    "word": "Hvor er...?",
+    "article": null,
+    "english": "Where is...?",
+    "level": 1
+  },
+  {
+    "id": "160",
+    "word": "Når...?",
+    "article": null,
+    "english": "When?",
+    "level": 1
+  },
+  {
+    "id": "161",
+    "word": "Kan jeg få...?",
+    "article": null,
+    "english": "Can I have...?",
+    "level": 1
+  },
+  {
+    "id": "162",
+    "word": "Øl",
+    "article": "et",
+    "english": "Beer",
+    "level": 2
+  },
+  {
+    "id": "163",
+    "word": "Rødvin / Hvitvin",
+    "article": null,
+    "english": "Red wine / White wine",
+    "level": 2
+  },
+  {
+    "id": "164",
+    "word": "Vann",
+    "article": "et",
+    "english": "Water",
+    "level": 2
+  },
+  {
+    "id": "165",
+    "word": "Jeg spiser ikke...",
+    "article": null,
+    "english": "I don't eat...",
+    "level": 2
+  },
+  {
+    "id": "166",
+    "word": "Jeg er vegetarianer",
+    "article": null,
+    "english": "I'm a vegetarian",
+    "level": 2
+  },
+  {
+    "id": "167",
+    "word": "Kan vi få regningen?",
+    "article": null,
+    "english": "Can we have the bill?",
+    "level": 2
+  },
+  {
+    "id": "168",
+    "word": "Venstre",
+    "article": null,
+    "english": "Left",
+    "level": 2
+  },
+  {
+    "id": "169",
+    "word": "Høyre",
+    "article": null,
+    "english": "Right",
+    "level": 2
+  },
+  {
+    "id": "170",
+    "word": "Ta til venstre",
+    "article": null,
+    "english": "Turn left",
+    "level": 2
+  },
+  {
+    "id": "171",
+    "word": "Ta til høyre",
+    "article": null,
+    "english": "Turn right",
+    "level": 2
+  },
+  {
+    "id": "172",
+    "word": "Busstopp",
+    "article": "en",
+    "english": "Bus stop",
+    "level": 2
+  },
+  {
+    "id": "173",
+    "word": "Inngang",
+    "article": "en",
+    "english": "Entrance",
+    "level": 2
+  },
+  {
+    "id": "174",
+    "word": "Utgang",
+    "article": "en",
+    "english": "Exit",
+    "level": 2
+  },
+  {
+    "id": "175",
+    "word": "En",
+    "article": null,
+    "english": "One",
+    "level": 1
+  },
+  {
+    "id": "176",
+    "word": "Sju",
+    "article": null,
+    "english": "Seven",
+    "level": 1
+  },
+  {
+    "id": "177",
+    "word": "Tretti",
+    "article": null,
+    "english": "Thirty",
+    "level": 1
+  },
+  {
+    "id": "178",
+    "word": "Førti",
+    "article": null,
+    "english": "Forty",
+    "level": 1
+  },
+  {
+    "id": "179",
+    "word": "Femti",
+    "article": null,
+    "english": "Fifty",
+    "level": 1
+  },
+  {
+    "id": "180",
+    "word": "Seksti",
+    "article": null,
+    "english": "Sixty",
+    "level": 1
+  },
+  {
+    "id": "181",
+    "word": "Søtti",
+    "article": null,
+    "english": "Seventy",
+    "level": 1
+  },
+  {
+    "id": "182",
+    "word": "Åtti",
+    "article": null,
+    "english": "Eighty",
+    "level": 1
+  },
+  {
+    "id": "183",
+    "word": "Nitti",
+    "article": null,
+    "english": "Ninety",
+    "level": 1
+  },
+  {
+    "id": "184",
+    "word": "Hundre",
+    "article": null,
+    "english": "One hundred",
+    "level": 1
+  },
+  {
+    "id": "185",
+    "word": "Mandag",
+    "article": null,
+    "english": "Monday",
+    "level": 1
+  },
+  {
+    "id": "186",
+    "word": "Tirsdag",
+    "article": null,
+    "english": "Tuesday",
+    "level": 1
+  },
+  {
+    "id": "187",
+    "word": "Onsdag",
+    "article": null,
+    "english": "Wednesday",
+    "level": 1
+  },
+  {
+    "id": "188",
+    "word": "Torsdag",
+    "article": null,
+    "english": "Thursday",
+    "level": 1
+  },
+  {
+    "id": "189",
+    "word": "Fredag",
+    "article": null,
+    "english": "Friday",
+    "level": 1
+  },
+  {
+    "id": "190",
+    "word": "Lørdag",
+    "article": null,
+    "english": "Saturday",
+    "level": 1
+  },
+  {
+    "id": "191",
+    "word": "Søndag",
+    "article": null,
+    "english": "Sunday",
+    "level": 1
+  },
+  {
+    "id": "192",
+    "word": "Hjelp!",
+    "article": null,
+    "english": "Help!",
+    "level": 2
+  },
+  {
+    "id": "193",
+    "word": "Jeg trenger lege",
+    "article": null,
+    "english": "I need a doctor",
+    "level": 2
+  },
+  {
+    "id": "194",
+    "word": "Jeg er dårlig",
+    "article": null,
+    "english": "I don't feel well",
+    "level": 2
+  },
+  {
+    "id": "195",
+    "word": "Ring politiet!",
+    "article": null,
+    "english": "Call the police!",
+    "level": 2
+  },
+  {
+    "id": "196",
+    "word": "Brann!",
+    "article": null,
+    "english": "Fire!",
+    "level": 2
+  }
 ]
