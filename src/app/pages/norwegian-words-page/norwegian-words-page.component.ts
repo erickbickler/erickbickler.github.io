@@ -38,7 +38,7 @@ export class NorwegianWordsPageComponent implements OnInit {
 
   private speakCurrentCard(): void {
     if (this.autoPlay && this.currentCard) {
-      this.audio.speak(this.currentCard.word, 'no-NO');
+      this.audio.speak(this.currentCard.word, 'nb-NO');
     }
   }
 

@@ -22,7 +22,7 @@ export class NorwegianFlashcardComponent {
   onPlayAudio(event: MouseEvent): void {
     event.stopPropagation();
     if (this.card) {
-      this.audio.speak(this.card.word, 'no-NO');
+      this.audio.speak(this.card.word, 'nb-NO');
     }
   }
 }
