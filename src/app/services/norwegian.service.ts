@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
+import { Observable, forkJoin, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { NorwegianCard } from '../Models/norwegian.model';
 import { CardState } from '../Models/flashcard.model';
@@ -22,18 +22,36 @@ export class NorwegianService {
       return of([]);
     }
 
-    return this.http.get<NorwegianCard[]>('assets/data/norwegian_words.json').pipe(
-      map(cards => cards.filter(card => levels[card.level - 1]))
+    return forkJoin([
+      this.http.get<NorwegianCard[]>('assets/data/norwegian_words.json'),
+      this.http.get<NorwegianCard[]>('assets/data/norwegian_travel_advanced.json'),
+      this.http.get<NorwegianCard[]>('assets/data/norwegian_signs.json'),
+      this.http.get<NorwegianCard[]>('assets/data/norwegian_advanced_vocab.json'),
+      this.http.get<NorwegianCard[]>('assets/data/norwegian_fluency.json')
+    ]).pipe(
+      map(([base, advanced, signs, vocab, fluency]) =>
+        [...base, ...advanced, ...signs, ...vocab, ...fluency].filter(card => levels[card.level - 1])
+      )
     );
   }
 
   getDueCards(cards: NorwegianCard[]): NorwegianCard[] {
     const states = this.getCardStates();
     const now = Date.now();
-    return cards.filter(card => {
+    const due = cards.filter(card => {
       const state = states[card.id];
       return !state || state.nextReview <= now;
     });
+    return this.shuffle(due);
+  }
+
+  private shuffle<T>(items: T[]): T[] {
+    const arr = [...items];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
   }
 
   rateCard(card: NorwegianCard, quality: number): void {

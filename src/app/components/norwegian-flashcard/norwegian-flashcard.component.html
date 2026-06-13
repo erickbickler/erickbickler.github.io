@@ -2,10 +2,10 @@
   <div class="card" [class.flipped]="flipped" [class.no-animation]="skipAnimation" (click)="onCardClick()">
     <div class="front">
       <span class="article" *ngIf="card.article">{{ card.article }}</span>
-      <span class="word">{{ card.word }}</span>
+      <span class="word" [ngClass]="wordSizeClass">{{ card.word }}</span>
     </div>
     <div class="back">
-      <div class="english">{{ card.english }}</div>
+      <div class="english" [ngClass]="englishSizeClass">{{ card.english }}</div>
     </div>
   </div>
 </div>
