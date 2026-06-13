@@ -25,4 +25,21 @@ export class NorwegianFlashcardComponent {
       this.audio.speak(this.card.word, 'nb-NO');
     }
   }
+
+  get wordSizeClass(): string {
+    return this.sizeClassFor(this.card?.word, [12, 22, 32, 48]);
+  }
+
+  get englishSizeClass(): string {
+    return this.sizeClassFor(this.card?.english, [18, 32, 48, 64]);
+  }
+
+  private sizeClassFor(text: string | undefined, thresholds: [number, number, number, number]): string {
+    const len = text?.length ?? 0;
+    if (len <= thresholds[0]) return 'size-xl';
+    if (len <= thresholds[1]) return 'size-lg';
+    if (len <= thresholds[2]) return 'size-md';
+    if (len <= thresholds[3]) return 'size-sm';
+    return 'size-xs';
+  }
 }
