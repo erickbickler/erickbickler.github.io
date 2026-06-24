@@ -20,6 +20,7 @@ export class NorwegianWordsPageComponent implements OnInit {
   isComplete = false;
   loading = true;
   autoPlay = false;
+  reversed = false;
 
   constructor(
     private norwegianService: NorwegianService,
@@ -29,11 +30,20 @@ export class NorwegianWordsPageComponent implements OnInit {
   ngOnInit(): void {
     this.enabledLevels = this.norwegianService.getEnabledLevels();
     this.autoPlay = this.norwegianService.getAutoPlay();
+    this.reversed = this.norwegianService.getReversed();
     this.loadCards();
   }
 
   onAutoPlayChange(): void {
     this.norwegianService.saveAutoPlay(this.autoPlay);
+  }
+
+  onDirectionChange(): void {
+    this.norwegianService.saveReversed(this.reversed);
+    this.isFlipped = false;
+    if (!this.reversed) {
+      this.speakCurrentCard();
+    }
   }
 
   private speakCurrentCard(): void {
@@ -53,12 +63,17 @@ export class NorwegianWordsPageComponent implements OnInit {
       this.dueCards = this.norwegianService.getDueCards(cards);
       this.currentCard = this.dueCards.length > 0 ? this.dueCards[0] : null;
       this.loading = false;
-      this.speakCurrentCard();
+      if (!this.reversed) {
+        this.speakCurrentCard();
+      }
     });
   }
 
   onFlip(): void {
     this.isFlipped = !this.isFlipped;
+    if (this.reversed && this.isFlipped) {
+      this.speakCurrentCard();
+    }
   }
 
   onRate(quality: number): void {
@@ -75,7 +90,9 @@ export class NorwegianWordsPageComponent implements OnInit {
     } else {
       this.currentCard = this.dueCards[this.cardIndex];
       setTimeout(() => { this.skipCardAnimation = false; }, 50);
-      this.speakCurrentCard();
+      if (!this.reversed) {
+        this.speakCurrentCard();
+      }
     }
   }
 
