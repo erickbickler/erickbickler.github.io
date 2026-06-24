@@ -18,6 +18,7 @@
       [card]="currentCard"
       [flipped]="isFlipped"
       [skipAnimation]="skipCardAnimation"
+      [reversed]="reversed"
       (flipCard)="onFlip()"
     ></app-norwegian-flashcard>
 
@@ -67,6 +68,10 @@
       <label class="checkbox-label">
         <input type="checkbox" [(ngModel)]="autoPlay" (change)="onAutoPlayChange()" />
         <span class="checkbox-text">🔊 Auto-play audio</span>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" [(ngModel)]="reversed" (change)="onDirectionChange()" />
+        <span class="checkbox-text">🔁 English → Norwegian</span>
       </label>
     </div>
   </div>

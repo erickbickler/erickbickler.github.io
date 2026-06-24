@@ -11,6 +11,7 @@ export class NorwegianFlashcardComponent {
   @Input() card: NorwegianCard | null = null;
   @Input() flipped = false;
   @Input() skipAnimation = false;
+  @Input() reversed = false;
   @Output() flipCard = new EventEmitter<void>();
 
   constructor(private audio: AudioService) {}

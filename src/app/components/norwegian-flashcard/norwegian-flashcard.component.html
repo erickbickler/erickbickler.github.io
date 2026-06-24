@@ -1,11 +1,18 @@
 <div class="card-container" *ngIf="card">
   <div class="card" [class.flipped]="flipped" [class.no-animation]="skipAnimation" (click)="onCardClick()">
     <div class="front">
-      <span class="article" *ngIf="card.article">{{ card.article }}</span>
-      <span class="word" [ngClass]="wordSizeClass">{{ card.word }}</span>
+      <ng-container *ngIf="!reversed">
+        <span class="article" *ngIf="card.article">{{ card.article }}</span>
+        <span class="word" [ngClass]="wordSizeClass">{{ card.word }}</span>
+      </ng-container>
+      <div *ngIf="reversed" class="english" [ngClass]="englishSizeClass">{{ card.english }}</div>
     </div>
     <div class="back">
-      <div class="english" [ngClass]="englishSizeClass">{{ card.english }}</div>
+      <ng-container *ngIf="reversed">
+        <span class="article" *ngIf="card.article">{{ card.article }}</span>
+        <span class="word" [ngClass]="wordSizeClass">{{ card.word }}</span>
+      </ng-container>
+      <div *ngIf="!reversed" class="english" [ngClass]="englishSizeClass">{{ card.english }}</div>
     </div>
   </div>
 </div>

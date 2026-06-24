@@ -14,6 +14,7 @@ export class NorwegianService {
   private readonly STATES_KEY = 'norwegian_card_states';
   private readonly LEVELS_COOKIE = 'norwegian_levels';
   private readonly AUTOPLAY_KEY = 'norwegian_autoplay';
+  private readonly DIRECTION_KEY = 'norwegian_direction';
 
   constructor(private http: HttpClient, private sm2: Sm2Service) {}
 
@@ -86,6 +87,14 @@ export class NorwegianService {
 
   saveAutoPlay(value: boolean): void {
     localStorage.setItem(this.AUTOPLAY_KEY, value ? '1' : '0');
+  }
+
+  getReversed(): boolean {
+    return localStorage.getItem(this.DIRECTION_KEY) === 'en-no';
+  }
+
+  saveReversed(reversed: boolean): void {
+    localStorage.setItem(this.DIRECTION_KEY, reversed ? 'en-no' : 'no-en');
   }
 
   private getCookie(name: string): string | null {
