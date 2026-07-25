@@ -24,6 +24,7 @@ import { FlashcardComponent } from './components/flashcard/flashcard.component';
 import { RatingButtonsComponent } from './components/rating-buttons/rating-buttons.component';
 import { NorwegianWordsPageComponent } from './pages/norwegian-words-page/norwegian-words-page.component';
 import { NorwegianFlashcardComponent } from './components/norwegian-flashcard/norwegian-flashcard.component';
+import { OysterMapPageComponent } from './pages/oyster-map-page/oyster-map-page.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { NorwegianFlashcardComponent } from './components/norwegian-flashcard/no
     FlashcardComponent,
     RatingButtonsComponent,
     NorwegianWordsPageComponent,
-    NorwegianFlashcardComponent
+    NorwegianFlashcardComponent,
+    OysterMapPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,53 @@
+<div class="oyster-map-page">
+  <div class="map-header">
+    <h1>Washington Oyster Beach Status</h1>
+    <p class="map-subtitle">Live harvest status from WA Dept. of Health — updated daily</p>
+  </div>
+
+  <div class="map-controls">
+    <div class="filter-group">
+      <label class="filter-toggle">
+        <input type="checkbox" [(ngModel)]="showOystersOnly" (change)="onFilterChange()">
+        Oyster beaches only
+      </label>
+    </div>
+    <div class="filter-group status-filters">
+      <label class="filter-check open">
+        <input type="checkbox" [(ngModel)]="statusFilter.open" (change)="onFilterChange()">
+        Open
+      </label>
+      <label class="filter-check conditional">
+        <input type="checkbox" [(ngModel)]="statusFilter.conditional" (change)="onFilterChange()">
+        Conditional
+      </label>
+      <label class="filter-check closed">
+        <input type="checkbox" [(ngModel)]="statusFilter.closed" (change)="onFilterChange()">
+        Closed
+      </label>
+      <label class="filter-check unclassified">
+        <input type="checkbox" [(ngModel)]="statusFilter.unclassified" (change)="onFilterChange()">
+        Unclassified
+      </label>
+    </div>
+    <div class="beach-count" *ngIf="!loading && !error">
+      {{ visibleCount }} beach{{ visibleCount !== 1 ? 'es' : '' }} shown
+    </div>
+  </div>
+
+  <div class="legend">
+    <span class="legend-dot open"></span> Open &nbsp;
+    <span class="legend-dot conditional"></span> Conditional &nbsp;
+    <span class="legend-dot closed"></span> Closed &nbsp;
+    <span class="legend-dot unclassified"></span> Unclassified
+  </div>
+
+  <div class="map-wrapper">
+    <div class="map-overlay loading-overlay" *ngIf="loading">
+      Loading beach data…
+    </div>
+    <div class="map-overlay error-overlay" *ngIf="error">
+      Could not load beach data. Check your connection or try refreshing.
+    </div>
+    <div #mapContainer class="map-container"></div>
+  </div>
+</div>
