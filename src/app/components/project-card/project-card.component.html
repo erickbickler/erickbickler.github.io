@@ -1,4 +1,4 @@
-<mat-card routerLink="/projects/{{project.routingName}}" [state]="{ project: this.project }">
+<mat-card [routerLink]="project.route || '/projects/' + project.routingName" [state]="{ project: this.project }">
     <mat-card-title>{{ project.title }}</mat-card-title>
     <mat-card-subtitle>{{ project.subtitle }}</mat-card-subtitle>
     <img mat-card-image [src]="project.primaryImage" alt="project image">

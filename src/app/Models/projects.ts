@@ -46,6 +46,30 @@ const TOOLS: Tool[] = [
 
 export const PROJECTS: Project[] = [
     {
+      title: "Washington Oyster Beach Map",
+      subtitle: "Live shellfish harvest status map",
+      description: "Interactive map of 500+ Washington public shellfish beaches showing live harvest status from the WA Dept. of Health, with per-beach low tide times from NOAA. Built entirely in the browser with no backend.",
+      primaryImage: "./assets/images/projects/oyster-map/preview.png",
+      secondaryImages: [],
+      tools: [
+        TOOLS.find(tool => tool.name == "Angular")!,
+      ],
+      routingName: "oyster-map",
+      route: "/oyster-map"
+    },
+    {
+      title: "Norwegian Flashcards",
+      subtitle: "Spaced-repetition vocabulary trainer",
+      description: "Norwegian vocabulary flashcard app with spaced repetition, text-to-speech pronunciation, and multiple learning levels from A1 beginner through B1 intermediate. Supports both Norwegian-to-English and English-to-Norwegian modes.",
+      primaryImage: "./assets/images/projects/norwegian-flashcards/preview.png",
+      secondaryImages: [],
+      tools: [
+        TOOLS.find(tool => tool.name == "Angular")!,
+      ],
+      routingName: "norwegian",
+      route: "/norwegian"
+    },
+    {
       title: "Byte-le Royale 2022",
       subtitle: "AI Programming Competition",
       description: "Developed a game for Byte-le Royale 2022, a yearly competition held at NDSU by the local ACM chapter. Lead development with a team of 7 people on a year long project that culminated in a day of great competition for the students who competed.",
