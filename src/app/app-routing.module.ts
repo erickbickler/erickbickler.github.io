@@ -6,6 +6,7 @@ import { ProjectDetailsPageComponent } from './pages/project-details-page/projec
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { FlashcardsPageComponent } from './pages/flashcards-page/flashcards-page.component';
 import { NorwegianWordsPageComponent } from './pages/norwegian-words-page/norwegian-words-page.component';
+import { OysterMapPageComponent } from './pages/oyster-map-page/oyster-map-page.component';
 
 const routes: Routes = [
   { path: 'projects', component: ProjectsPageComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'about', component: AboutPageComponent},
   { path: 'flashcards', component: FlashcardsPageComponent },
   { path: 'norwegian', component: NorwegianWordsPageComponent },
+  { path: 'oyster-map', component: OysterMapPageComponent },
   { path: '', redirectTo: '/projects', pathMatch: 'full' }
 ];
 

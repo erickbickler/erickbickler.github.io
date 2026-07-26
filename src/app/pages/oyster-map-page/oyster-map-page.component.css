@@ -1,0 +1,151 @@
+.oyster-map-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.map-header h1 {
+  margin: 0 0 4px 0;
+  font-size: 1.4rem;
+}
+
+.map-subtitle {
+  margin: 0 0 16px 0;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+.map-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.filter-check {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  user-select: none;
+}
+
+.filter-check.open { color: #2ecc71; }
+.filter-check.conditional { color: #f39c12; }
+.filter-check.closed { color: #e74c3c; }
+.filter-check.unclassified { color: #95a5a6; }
+
+.beach-count {
+  font-size: 0.75rem;
+  opacity: 0.55;
+  margin-left: auto;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+  opacity: 0.8;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.legend-dot.open { background: #2ecc71; }
+.legend-dot.conditional { background: #f39c12; }
+.legend-dot.closed { background: #e74c3c; }
+.legend-dot.unclassified { background: #95a5a6; }
+
+.map-wrapper {
+  position: relative;
+}
+
+.map-container {
+  height: 70vh;
+  min-height: 400px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #444;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+.loading-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.error-overlay {
+  background: rgba(180, 0, 0, 0.35);
+  color: #fff;
+}
+
+/* Leaflet popup tide section */
+:host ::ng-deep .popup-tides {
+  margin-top: 8px;
+  padding-top: 6px;
+  border-top: 1px solid #ddd;
+  font-size: 0.78rem;
+}
+
+:host ::ng-deep .popup-tides-label {
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #555;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+:host ::ng-deep .tide-row {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  margin: 2px 0;
+}
+
+:host ::ng-deep .tide-day {
+  color: #777;
+  min-width: 58px;
+  font-size: 0.72rem;
+}
+
+:host ::ng-deep .tide-time {
+  flex: 1;
+}
+
+:host ::ng-deep .tide-height {
+  font-weight: bold;
+  color: #1a7abd;
+  min-width: 46px;
+  text-align: right;
+}
+
+:host ::ng-deep .tide-unavailable {
+  color: #aaa;
+  font-style: italic;
+}
