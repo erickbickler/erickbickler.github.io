@@ -9,5 +9,4 @@ export interface Beach {
   wdfwUrl: string;
   lat: number;
   lng: number;
-  hasOyster: boolean;
 }

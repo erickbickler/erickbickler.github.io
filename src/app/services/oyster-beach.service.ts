@@ -70,10 +70,7 @@ export class OysterBeachService {
     const county = this.attr(attrs, 'countyname') || this.attr(attrs, 'COUNTY') || '';
     const wdfwUrl = this.attr(attrs, 'WDFW') || '';
 
-    const oysterText = (name + ' ' + species + ' ' + reason).toLowerCase();
-    const hasOyster = oysterText.includes('oyster');
-
-    return { name, status, reason, species, county, wdfwUrl, lat, lng, hasOyster };
+    return { name, status, reason, species, county, wdfwUrl, lat, lng };
   }
 
   // suffix-match against fully-qualified ArcGIS field names

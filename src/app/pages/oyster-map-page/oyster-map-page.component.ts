@@ -23,7 +23,6 @@ export class OysterMapPageComponent implements OnInit, AfterViewInit, OnDestroy 
   beaches: Beach[] = [];
   loading = true;
   error = false;
-  showOystersOnly = false;
   statusFilter: Record<BeachStatus, boolean> = {
     open: true,
     conditional: true,
@@ -75,10 +74,7 @@ export class OysterMapPageComponent implements OnInit, AfterViewInit, OnDestroy 
   }
 
   private filteredBeaches(): Beach[] {
-    return this.beaches.filter((b) => {
-      if (this.showOystersOnly && !b.hasOyster) return false;
-      return this.statusFilter[b.status];
-    });
+    return this.beaches.filter((b) => this.statusFilter[b.status]);
   }
 
   private renderMarkers(): void {
