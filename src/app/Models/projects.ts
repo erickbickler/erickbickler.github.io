@@ -46,6 +46,42 @@ const TOOLS: Tool[] = [
 
 export const PROJECTS: Project[] = [
     {
+      title: "Washington Oyster Beach Map",
+      subtitle: "Live shellfish harvest status map",
+      description: "Interactive map of 500+ Washington public shellfish beaches showing live harvest status from the WA Dept. of Health. Color-coded pins indicate open, conditional, closed, or unclassified beaches. Each popup shows closure reasons, species, a WDFW link, and the next 3 low tides fetched in real time from the NOAA API.",
+      primaryImage: "./assets/images/projects/oyster-map/preview.png",
+      secondaryImages: [],
+      tools: [
+        TOOLS.find(tool => tool.name == "Angular")!
+      ],
+      routingName: "oyster-map",
+      route: "/oyster-map"
+    },
+    {
+      title: "Norwegian Flashcards",
+      subtitle: "Spaced-repetition vocabulary trainer",
+      description: "A flashcard app for learning Norwegian vocabulary with multiple curated decks covering everyday words, travel, signs, and more. Supports both Norwegian-to-English and English-to-Norwegian modes with keyboard navigation and progress tracking.",
+      primaryImage: "./assets/images/projects/norwegian-flashcards/preview.png",
+      secondaryImages: [],
+      tools: [
+        TOOLS.find(tool => tool.name == "Angular")!
+      ],
+      routingName: "norwegian",
+      route: "/norwegian"
+    },
+    {
+      title: "Chinese Flashcards",
+      subtitle: "TOCFL vocabulary trainer",
+      description: "A flashcard app for learning Mandarin Chinese vocabulary aligned to the TOCFL (Test of Chinese as a Foreign Language) framework. Covers Novice and Level 1 word lists with spaced-repetition progress tracking and text-to-speech pronunciation.",
+      primaryImage: "./assets/images/projects/chinese-flashcards/preview.png",
+      secondaryImages: [],
+      tools: [
+        TOOLS.find(tool => tool.name == "Angular")!
+      ],
+      routingName: "flashcards",
+      route: "/flashcards"
+    },
+    {
       title: "Byte-le Royale 2022",
       subtitle: "AI Programming Competition",
       description: "Developed a game for Byte-le Royale 2022, a yearly competition held at NDSU by the local ACM chapter. Lead development with a team of 7 people on a year long project that culminated in a day of great competition for the students who competed.",

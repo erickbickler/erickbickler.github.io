@@ -5,10 +5,12 @@
 mat-card {
     cursor: pointer;
     margin-bottom: 1rem;
+    height: calc(100% - 1rem);
 }
 
 mat-card img {
-    height: auto;
+    height: 240px;
+    object-fit: cover;
 }
 
 .tool-container {
