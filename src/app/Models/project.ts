@@ -8,4 +8,5 @@ export class Project {
     secondaryImages: string[] = [];
     tools: Tool[] = [];
     routingName: string = "";
+    route?: string;
 }
