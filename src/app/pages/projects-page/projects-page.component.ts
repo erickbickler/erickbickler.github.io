@@ -18,9 +18,10 @@ export class ProjectsPageComponent implements OnInit {
   }
 
   projectList: Project[] = [];
-  
+  mobileTab: 'projects' | 'bio' = 'projects';
+
   async fetchData() {
-    this.projectList = this.projectService.getProjects()
+    this.projectList = this.projectService.getProjects();
   }
 
 }

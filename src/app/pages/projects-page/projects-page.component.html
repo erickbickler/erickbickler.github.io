@@ -1,14 +1,32 @@
-<div class="image-container">
-    <img src="./assets/images/laptop-minimalist.svg" alt="minimalist laptop">
-    <div class="overlay">
-        <h1>Projects</h1>
-    </div>
+<div class="mobile-tabs">
+  <button [class.active]="mobileTab === 'projects'" (click)="mobileTab = 'projects'">projects</button>
+  <button [class.active]="mobileTab === 'bio'" (click)="mobileTab = 'bio'">bio</button>
 </div>
-<div id="projects" class="projects">
-    <mat-divider></mat-divider>
-    <div class="row project-container" style="margin: 0">
-        <div class="col-4" *ngFor="let project of projectList">
-            <app-project-card [project]="project"></app-project-card>
-        </div>
+
+<div class="layout">
+  <aside class="sidebar" [class.mobile-hidden]="mobileTab !== 'bio'">
+    <img class="headshot" src="./assets/images/headshot_grayscale.png" alt="Erick Bickler">
+    <h1 class="name">Erick Bickler</h1>
+    <p class="title">Full Stack Software Developer</p>
+    <p class="bio">Passionate about solving hard problems and building things that work. Experience across the full stack — from Angular frontends to Django and Node backends.</p>
+    <div class="social-links">
+      <a href="https://github.com/erickbickler" target="_blank" rel="noopener">
+        <img src="./assets/images/github.svg" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/erick-bickler" target="_blank" rel="noopener">
+        <img src="./assets/images/linkedin.svg" alt="LinkedIn">
+      </a>
     </div>
+    <nav class="sidebar-nav">
+      <a routerLink="/about">about</a>
+    </nav>
+  </aside>
+
+  <main class="projects-grid" [class.mobile-hidden]="mobileTab !== 'projects'">
+    <div class="row project-container" style="margin: 0">
+      <div class="col-4" *ngFor="let project of projectList">
+        <app-project-card [project]="project"></app-project-card>
+      </div>
+    </div>
+  </main>
 </div>

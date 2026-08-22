@@ -2,10 +2,16 @@
     font-family: Roboto;
 }
 
+:host {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 mat-card {
     cursor: pointer;
     margin-bottom: 1rem;
-    height: calc(100% - 1rem);
+    flex: 1;
 }
 
 mat-card img {
