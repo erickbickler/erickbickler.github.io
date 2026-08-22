@@ -13,6 +13,8 @@ export class AppComponent {
 
   get showNav(): boolean {
     return !this.router.url.startsWith('/flashcards') &&
-           !this.router.url.startsWith('/norwegian');
+           !this.router.url.startsWith('/norwegian') &&
+           this.router.url !== '/projects' &&
+           this.router.url !== '/';
   }
 }
