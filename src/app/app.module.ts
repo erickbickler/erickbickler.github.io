@@ -11,10 +11,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { ToolComponent } from './components/tool/tool.component';
@@ -29,11 +26,8 @@ import { OysterMapPageComponent } from './pages/oyster-map-page/oyster-map-page.
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    TopNavbarComponent,
     ProjectsPageComponent,
     ProjectCardComponent,
-    AboutPageComponent,
     ToolComponent,
     ProjectDetailsPageComponent,
     FlashcardsPageComponent,
