@@ -1,11 +1,13 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, ChangeDetectionStrategy } from '@angular/core';
 import { NorwegianCard } from '../../Models/norwegian.model';
 import { AudioService } from '../../services/audio.service';
 
 @Component({
-  selector: 'app-norwegian-flashcard',
-  templateUrl: './norwegian-flashcard.component.html',
-  styleUrls: ['./norwegian-flashcard.component.css']
+    selector: 'app-norwegian-flashcard',
+    templateUrl: './norwegian-flashcard.component.html',
+    styleUrls: ['./norwegian-flashcard.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class NorwegianFlashcardComponent {
   @Input() card: NorwegianCard | null = null;

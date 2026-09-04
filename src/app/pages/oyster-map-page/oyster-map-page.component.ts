@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, OnDestroy, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, AfterViewInit, OnDestroy, ElementRef, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import * as L from 'leaflet';
 import { Beach, BeachStatus } from '../../Models/beach';
 import { OysterBeachService } from '../../services/oyster-beach.service';
@@ -13,9 +13,11 @@ const STATUS_COLOR: Record<BeachStatus, string> = {
 };
 
 @Component({
-  selector: 'app-oyster-map-page',
-  templateUrl: './oyster-map-page.component.html',
-  styleUrls: ['./oyster-map-page.component.css']
+    selector: 'app-oyster-map-page',
+    templateUrl: './oyster-map-page.component.html',
+    styleUrls: ['./oyster-map-page.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class OysterMapPageComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('mapContainer', { static: true }) mapContainer!: ElementRef;

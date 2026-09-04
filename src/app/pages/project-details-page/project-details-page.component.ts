@@ -1,12 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Project } from 'src/app/Models/project';
 import { ProjectService } from 'src/app/project.service';
 
 @Component({
-  selector: 'app-project-details-page',
-  templateUrl: './project-details-page.component.html',
-  styleUrls: ['./project-details-page.component.css']
+    selector: 'app-project-details-page',
+    templateUrl: './project-details-page.component.html',
+    styleUrls: ['./project-details-page.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class ProjectDetailsPageComponent implements OnInit {
 

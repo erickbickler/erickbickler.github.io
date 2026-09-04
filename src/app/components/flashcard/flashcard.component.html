@@ -1,14 +1,18 @@
-<div class="card-container" *ngIf="card">
-  <div class="card" [class.flipped]="flipped" [class.no-animation]="skipAnimation" (click)="onCardClick()">
-    <div class="front">
-      {{ card.character }}
-    </div>
-    <div class="back">
-      <div class="pinyin">{{ card.pinyin }}</div>
-      <div class="english">{{ card.english }}</div>
+@if (card) {
+  <div class="card-container">
+    <div class="card" [class.flipped]="flipped" [class.no-animation]="skipAnimation" (click)="onCardClick()">
+      <div class="front">
+        {{ card.character }}
+      </div>
+      <div class="back">
+        <div class="pinyin">{{ card.pinyin }}</div>
+        <div class="english">{{ card.english }}</div>
+      </div>
     </div>
   </div>
-</div>
-<div class="audio-controls" *ngIf="card">
-  <button class="audio-btn" (click)="onPlayAudio($event)" title="Listen to pronunciation">🔊</button>
-</div>
+}
+@if (card) {
+  <div class="audio-controls">
+    <button class="audio-btn" (click)="onPlayAudio($event)" title="Listen to pronunciation">🔊</button>
+  </div>
+}

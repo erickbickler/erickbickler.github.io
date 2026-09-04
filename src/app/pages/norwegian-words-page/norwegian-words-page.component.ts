@@ -1,13 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { NorwegianCard } from '../../Models/norwegian.model';
 import { CardState } from '../../Models/flashcard.model';
 import { NorwegianService } from '../../services/norwegian.service';
 import { AudioService } from '../../services/audio.service';
 
 @Component({
-  selector: 'app-norwegian-words-page',
-  templateUrl: './norwegian-words-page.component.html',
-  styleUrls: ['./norwegian-words-page.component.css']
+    selector: 'app-norwegian-words-page',
+    templateUrl: './norwegian-words-page.component.html',
+    styleUrls: ['./norwegian-words-page.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class NorwegianWordsPageComponent implements OnInit {
   currentCard: NorwegianCard | null = null;

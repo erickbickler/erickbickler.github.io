@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 
 interface RatingOption {
   quality: number;
@@ -7,9 +7,11 @@ interface RatingOption {
 }
 
 @Component({
-  selector: 'app-rating-buttons',
-  templateUrl: './rating-buttons.component.html',
-  styleUrls: ['./rating-buttons.component.css']
+    selector: 'app-rating-buttons',
+    templateUrl: './rating-buttons.component.html',
+    styleUrls: ['./rating-buttons.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class RatingButtonsComponent {
   @Output() rate = new EventEmitter<number>();

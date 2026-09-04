@@ -24,9 +24,11 @@
         Unclassified
       </label>
     </div>
-    <div class="beach-count" *ngIf="!loading && !error">
-      {{ visibleCount }} beach{{ visibleCount !== 1 ? 'es' : '' }} shown
-    </div>
+    @if (!loading && !error) {
+      <div class="beach-count">
+        {{ visibleCount }} beach{{ visibleCount !== 1 ? 'es' : '' }} shown
+      </div>
+    }
   </div>
 
   <div class="legend">
@@ -37,12 +39,16 @@
   </div>
 
   <div class="map-wrapper">
-    <div class="map-overlay loading-overlay" *ngIf="loading">
-      Loading beach data…
-    </div>
-    <div class="map-overlay error-overlay" *ngIf="error">
-      Could not load beach data. Check your connection or try refreshing.
-    </div>
+    @if (loading) {
+      <div class="map-overlay loading-overlay">
+        Loading beach data…
+      </div>
+    }
+    @if (error) {
+      <div class="map-overlay error-overlay">
+        Could not load beach data. Check your connection or try refreshing.
+      </div>
+    }
     <div #mapContainer class="map-container"></div>
   </div>
 </div>

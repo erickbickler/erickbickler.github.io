@@ -1,12 +1,13 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
+import { Component, Input, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Router } from '@angular/router';
 import { Project } from '../../Models/project';
 
 @Component({
-  selector: 'app-project-card',
-  templateUrl: './project-card.component.html',
-  styleUrls: ['./project-card.component.css']
+    selector: 'app-project-card',
+    templateUrl: './project-card.component.html',
+    styleUrls: ['./project-card.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class ProjectCardComponent implements OnInit {
 

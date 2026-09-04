@@ -1,51 +1,61 @@
 <div class="norwegian-page">
 
-  <div *ngIf="loading" class="loading">
-    Loading cards...
-  </div>
+  @if (loading) {
+    <div class="loading">
+      Loading cards...
+    </div>
+  }
 
-  <div *ngIf="!loading && enabledLevels[0] === false && enabledLevels[1] === false && enabledLevels[2] === false" class="empty-state">
-    <p>Please select at least one level to begin.</p>
-  </div>
+  @if (!loading && enabledLevels[0] === false && enabledLevels[1] === false && enabledLevels[2] === false) {
+    <div class="empty-state">
+      <p>Please select at least one level to begin.</p>
+    </div>
+  }
 
-  <div *ngIf="!loading && isComplete" class="complete-state">
-    <h2>All caught up! 🎉</h2>
-    <p>You've reviewed all your due cards. Come back later to continue learning.</p>
-  </div>
+  @if (!loading && isComplete) {
+    <div class="complete-state">
+      <h2>All caught up! 🎉</h2>
+      <p>You've reviewed all your due cards. Come back later to continue learning.</p>
+    </div>
+  }
 
-  <div *ngIf="!loading && !isComplete && currentCard && (enabledLevels[0] || enabledLevels[1] || enabledLevels[2])" class="card-section">
-    <app-norwegian-flashcard
-      [card]="currentCard"
-      [flipped]="isFlipped"
-      [skipAnimation]="skipCardAnimation"
-      [reversed]="reversed"
-      (flipCard)="onFlip()"
-    ></app-norwegian-flashcard>
-
-    <app-rating-buttons
-      *ngIf="isFlipped"
-      (rate)="onRate($event)"
-    ></app-rating-buttons>
-  </div>
+  @if (!loading && !isComplete && currentCard && (enabledLevels[0] || enabledLevels[1] || enabledLevels[2])) {
+    <div class="card-section">
+      <app-norwegian-flashcard
+        [card]="currentCard"
+        [flipped]="isFlipped"
+        [skipAnimation]="skipCardAnimation"
+        [reversed]="reversed"
+        (flipCard)="onFlip()"
+      ></app-norwegian-flashcard>
+      @if (isFlipped) {
+        <app-rating-buttons
+          (rate)="onRate($event)"
+        ></app-rating-buttons>
+      }
+    </div>
+  }
 
   <div class="stats">
     <p>{{ deckStats }}</p>
   </div>
 
-  <div *ngIf="!loading" class="summary-section">
-    <div class="summary-card mastered">
-      <div class="summary-count">{{ masteredCount }}</div>
-      <div class="summary-label">Mastered</div>
+  @if (!loading) {
+    <div class="summary-section">
+      <div class="summary-card mastered">
+        <div class="summary-count">{{ masteredCount }}</div>
+        <div class="summary-label">Mastered</div>
+      </div>
+      <div class="summary-card learning">
+        <div class="summary-count">{{ learningCount }}</div>
+        <div class="summary-label">Learning</div>
+      </div>
+      <div class="summary-card new">
+        <div class="summary-count">{{ newCount }}</div>
+        <div class="summary-label">New</div>
+      </div>
     </div>
-    <div class="summary-card learning">
-      <div class="summary-count">{{ learningCount }}</div>
-      <div class="summary-label">Learning</div>
-    </div>
-    <div class="summary-card new">
-      <div class="summary-count">{{ newCount }}</div>
-      <div class="summary-label">New</div>
-    </div>
-  </div>
+  }
 
   <div class="level-selector">
     <h3>Learning Levels</h3>
