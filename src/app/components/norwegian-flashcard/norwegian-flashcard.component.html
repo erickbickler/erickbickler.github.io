@@ -1,21 +1,33 @@
-<div class="card-container" *ngIf="card">
-  <div class="card" [class.flipped]="flipped" [class.no-animation]="skipAnimation" (click)="onCardClick()">
-    <div class="front">
-      <ng-container *ngIf="!reversed">
-        <span class="article" *ngIf="card.article">{{ card.article }}</span>
-        <span class="word" [ngClass]="wordSizeClass">{{ card.word }}</span>
-      </ng-container>
-      <div *ngIf="reversed" class="english" [ngClass]="englishSizeClass">{{ card.english }}</div>
-    </div>
-    <div class="back">
-      <ng-container *ngIf="reversed">
-        <span class="article" *ngIf="card.article">{{ card.article }}</span>
-        <span class="word" [ngClass]="wordSizeClass">{{ card.word }}</span>
-      </ng-container>
-      <div *ngIf="!reversed" class="english" [ngClass]="englishSizeClass">{{ card.english }}</div>
+@if (card) {
+  <div class="card-container">
+    <div class="card" [class.flipped]="flipped" [class.no-animation]="skipAnimation" (click)="onCardClick()">
+      <div class="front">
+        @if (!reversed) {
+          @if (card.article) {
+            <span class="article">{{ card.article }}</span>
+          }
+          <span class="word" [ngClass]="wordSizeClass">{{ card.word }}</span>
+        }
+        @if (reversed) {
+          <div class="english" [ngClass]="englishSizeClass">{{ card.english }}</div>
+        }
+      </div>
+      <div class="back">
+        @if (reversed) {
+          @if (card.article) {
+            <span class="article">{{ card.article }}</span>
+          }
+          <span class="word" [ngClass]="wordSizeClass">{{ card.word }}</span>
+        }
+        @if (!reversed) {
+          <div class="english" [ngClass]="englishSizeClass">{{ card.english }}</div>
+        }
+      </div>
     </div>
   </div>
-</div>
-<div class="audio-controls" *ngIf="card">
-  <button class="audio-btn" (click)="onPlayAudio($event)" title="Listen to pronunciation">🔊</button>
-</div>
+}
+@if (card) {
+  <div class="audio-controls">
+    <button class="audio-btn" (click)="onPlayAudio($event)" title="Listen to pronunciation">🔊</button>
+  </div>
+}

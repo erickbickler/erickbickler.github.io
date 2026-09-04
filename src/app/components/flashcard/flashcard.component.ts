@@ -1,11 +1,13 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 import { TocflCard } from '../../Models/flashcard.model';
 import { AudioService } from '../../services/audio.service';
 
 @Component({
-  selector: 'app-flashcard',
-  templateUrl: './flashcard.component.html',
-  styleUrls: ['./flashcard.component.css']
+    selector: 'app-flashcard',
+    templateUrl: './flashcard.component.html',
+    styleUrls: ['./flashcard.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class FlashcardComponent {
   @Input() card: TocflCard | null = null;

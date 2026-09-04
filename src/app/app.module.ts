@@ -6,10 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi, withXhr } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
@@ -42,14 +40,11 @@ import { OysterMapPageComponent } from './pages/oyster-map-page/oyster-map-page.
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatButtonModule,
     MatDividerModule,
-    MatCheckboxModule,
-    HttpClientModule,
     CommonModule,
     FormsModule
   ],
-  providers: [],
+  providers: [provideHttpClient(withXhr(), withInterceptorsFromDi())],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

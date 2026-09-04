@@ -1,10 +1,11 @@
 <div class="rating-container">
-  <button
-    *ngFor="let option of ratingOptions"
-    class="rating-button"
-    [style.background-color]="option.color"
-    (click)="onRate(option.quality)"
-  >
-    {{ option.label }}
-  </button>
+  @for (option of ratingOptions; track option) {
+    <button
+      class="rating-button"
+      [style.background-color]="option.color"
+      (click)="onRate(option.quality)"
+      >
+      {{ option.label }}
+    </button>
+  }
 </div>

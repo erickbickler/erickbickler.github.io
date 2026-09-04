@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Portfolio website built with **Angular 11** showcasing projects and skills. Deployed to GitHub Pages.
+Portfolio website built with **Angular 22** showcasing projects and skills. Deployed to GitHub Pages.
 
 ## Common Commands
 
@@ -12,8 +12,7 @@ Portfolio website built with **Angular 11** showcasing projects and skills. Depl
 - **Start dev server**: `npm start` (serves on http://localhost:4200/)
 - **Build for production**: `npm run build` (output: `dist/PortfolioWebsite/`)
 - **Run unit tests**: `npm test` (Karma + Jasmine; headless: `ng test --watch=false`)
-- **Run e2e tests**: `npm run e2e` (Protractor)
-- **Lint code**: `npm run lint` (TSLint)
+- **Lint code**: `npm run lint` (ESLint via @angular-eslint)
 - **Deploy to GitHub Pages**: `ng deploy` (automatic deployment to gh-pages branch)
 
 ### Scaffolding
@@ -36,9 +35,8 @@ Portfolio website built with **Angular 11** showcasing projects and skills. Depl
 - **HttpService** - Wraps HttpClient for API calls
 
 ### Material Components
-Uses Angular Material v11 with the **indigo-pink** prebuilt theme:
+Uses Angular Material v22 with the **indigo-pink** prebuilt theme:
 - MatCardModule (project cards)
-- MatButtonModule (buttons)
 - MatDividerModule (dividers)
 
 ### Data Flow
@@ -47,15 +45,16 @@ Pages route to different views via Angular Router. Components receive data from 
 ## Build Configuration
 
 - **Build output**: `dist/PortfolioWebsite/`
+- **Builder**: `@angular/build:application` (esbuild-based; replaced the old webpack browser builder)
 - **AOT compilation**: Enabled by default
-- **Production optimizations**: Enabled (optimization, vendorChunk: false, buildOptimizer: true)
+- **Production optimizations**: Enabled via the `production` configuration (optimization, outputHashing, extractLicenses)
 - **Styles**: Global styles in `src/styles.css` + Material theme
 
 ## Testing
 
 - **Unit tests**: Karma test runner with Jasmine framework. Test files colocated with components (*.spec.ts)
-- **E2E tests**: Protractor. Tests in `e2e/` directory
 - **Coverage**: Available via Karma coverage plugin
+- No e2e tests (Protractor was removed as part of the Angular 11→22 upgrade; it's deprecated/unmaintained)
 
 ## Deployment
 

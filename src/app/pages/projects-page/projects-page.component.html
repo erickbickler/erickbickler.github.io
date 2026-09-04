@@ -21,9 +21,11 @@
 
   <main class="projects-grid" [class.mobile-hidden]="mobileTab !== 'projects'">
     <div class="row project-container" style="margin: 0">
-      <div class="col-4" *ngFor="let project of projectList">
-        <app-project-card [project]="project"></app-project-card>
-      </div>
+      @for (project of projectList; track project) {
+        <div class="col-4">
+          <app-project-card [project]="project"></app-project-card>
+        </div>
+      }
     </div>
   </main>
 </div>

@@ -1,13 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { TocflCard, CardState } from '../../Models/flashcard.model';
 import { FlashcardService } from '../../services/flashcard.service';
 import { StorageService } from '../../services/storage.service';
 import { AudioService } from '../../services/audio.service';
 
 @Component({
-  selector: 'app-flashcards-page',
-  templateUrl: './flashcards-page.component.html',
-  styleUrls: ['./flashcards-page.component.css']
+    selector: 'app-flashcards-page',
+    templateUrl: './flashcards-page.component.html',
+    styleUrls: ['./flashcards-page.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class FlashcardsPageComponent implements OnInit {
   currentCard: TocflCard | null = null;
